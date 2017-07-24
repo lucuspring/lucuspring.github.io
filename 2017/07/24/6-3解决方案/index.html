@@ -92,10 +92,15 @@
 <meta property="og:url" content="http://lucuspring.github.io/2017/07/24/6-3解决方案/index.html">
 <meta property="og:site_name" content="Lucuspring's Blogs">
 <meta property="og:description" content="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！">
-<meta property="og:updated_time" content="2017-07-24T09:17:52.855Z">
+<meta property="og:image" content="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3-main.png">
+<meta property="og:image" content="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-java.png">
+<meta property="og:image" content="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-resources.png">
+<meta property="og:image" content="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-webapp.png">
+<meta property="og:updated_time" content="2017-07-24T09:33:59.071Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="6+3解决方案">
 <meta name="twitter:description" content="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！">
+<meta name="twitter:image" content="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3-main.png">
 
 
 
@@ -317,7 +322,19 @@
         <h4 id="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！"><a href="#在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！" class="headerlink" title="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！"></a>在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！</h4><a id="more"></a>
 <h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><h5 id="1-font-awesome被过滤掉的解决方案"><a href="#1-font-awesome被过滤掉的解决方案" class="headerlink" title="1. font-awesome被过滤掉的解决方案"></a>1. font-awesome被过滤掉的解决方案</h5><p>sol：在web.xml中添加下列信息即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;servlet-mapping&gt;</div><div class="line">    &lt;servlet-name&gt;default&lt;/servlet-name&gt;</div><div class="line">    &lt;url-pattern&gt;*.woff&lt;/url-pattern&gt;</div><div class="line">&lt;/servlet-mapping&gt;</div></pre></td></tr></table></figure></p>
 <p>and，restart server<br>原理：引用小图标时，需要加载一些字体信息</p>
-<h3 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h3>
+<h3 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h3><blockquote>
+<h4 id="附：该项目一期的树状图（20170724）"><a href="#附：该项目一期的树状图（20170724）" class="headerlink" title="附：该项目一期的树状图（20170724）"></a>附：该项目一期的树状图（20170724）</h4><h5 id="main"><a href="#main" class="headerlink" title="main"></a>main</h5></blockquote>
+<p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3-main.png" alt="main"></p>
+<blockquote>
+<h5 id="main-java-com-gaokao"><a href="#main-java-com-gaokao" class="headerlink" title="main-java-com.gaokao"></a>main-java-com.gaokao</h5></blockquote>
+<p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-java.png" alt="main-java-com.gaokao"></p>
+<blockquote>
+<h5 id="main-resource"><a href="#main-resource" class="headerlink" title="main-resource"></a>main-resource</h5></blockquote>
+<p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-resources.png" alt="main-resource"></p>
+<blockquote>
+<h5 id="main-webapp"><a href="#main-webapp" class="headerlink" title="main-webapp"></a>main-webapp</h5></blockquote>
+<p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-webapp.png" alt="main-webapp"></p>
+
       
     </div>
 
@@ -532,7 +549,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！"><span class="nav-number">1.</span> <span class="nav-text">在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number"></span> <span class="nav-text">前端</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-font-awesome被过滤掉的解决方案"><span class="nav-number">0.1.</span> <span class="nav-text">1. font-awesome被过滤掉的解决方案</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number"></span> <span class="nav-text">后台</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！"><span class="nav-number">1.</span> <span class="nav-text">在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前端"><span class="nav-number"></span> <span class="nav-text">前端</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-font-awesome被过滤掉的解决方案"><span class="nav-number">0.1.</span> <span class="nav-text">1. font-awesome被过滤掉的解决方案</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台"><span class="nav-number"></span> <span class="nav-text">后台</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#附：该项目一期的树状图（20170724）"><span class="nav-number">1.</span> <span class="nav-text">附：该项目一期的树状图（20170724）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#main"><span class="nav-number">1.1.</span> <span class="nav-text">main</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#main-java-com-gaokao"><span class="nav-number">1.2.</span> <span class="nav-text">main-java-com.gaokao</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#main-resource"><span class="nav-number">1.3.</span> <span class="nav-text">main-resource</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#main-webapp"><span class="nav-number">1.4.</span> <span class="nav-text">main-webapp</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
