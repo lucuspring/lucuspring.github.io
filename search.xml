@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>Markdown基本语法</title>
+      <link href="/2018/05/28/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+      <url>/2018/05/28/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p>有一段时间没有写博客了（大概有大半年了，摔~），然鹅今天到了提笔忘字的地步，遂此篇博客为之记。<br><a id="more"></a></p><h2 id="0X00-框架的确定"><a href="#0X00-框架的确定" class="headerlink" title="0X00 框架的确定"></a>0X00 框架的确定</h2><p>框架的划分基本上是以标题的<code>级数</code>来划分的，这里的<code>级数</code>有两种规则：</p><h3 id="标记"><a href="#标记" class="headerlink" title="#标记"></a>#标记</h3><p>从一级标题到六级标题分别为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#      一级标题</div><div class="line">##     二级标题</div><div class="line">###    三级标题</div><div class="line">####   四级标题</div><div class="line">#####  五级标题</div><div class="line">###### 六级标题</div></pre></td></tr></table></figure></p><h3 id="或-标记"><a href="#或-标记" class="headerlink" title="=或-标记"></a>=或-标记</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">一级</div><div class="line">=====</div><div class="line">二级</div><div class="line">------</div></pre></td></tr></table></figure><h3 id="字体处理"><a href="#字体处理" class="headerlink" title="字体处理"></a>字体处理</h3><ol><li>加粗 <code>** 粗体 **</code></li><li>斜体 <code>* 斜体 *</code></li><li>斜体加粗 <code>*** 斜体加粗 ***</code></li><li>删除线 <code>~~ 删除文本 ~~</code></li></ol><h3 id="字体颜色，字号，Font-family，底色等"><a href="#字体颜色，字号，Font-family，底色等" class="headerlink" title="字体颜色，字号，Font family，底色等"></a>字体颜色，字号，Font family，底色等</h3><p>这些可以通过内嵌HTML做到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;</div><div class="line">&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;</div><div class="line">&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;</div><div class="line">&lt;font color=#0099ff size=3 face=&quot;黑体&quot;&gt;color=#0099ff size=3 face=&quot;黑体&quot;&lt;/font&gt;</div><div class="line">&lt;font color=#00ffff size=4&gt;color=#00ffff size=4&lt;/font&gt;</div><div class="line">&lt;font color=gray size=5&gt;color=gray size=5&lt;/font&gt;</div><div class="line"></div><div class="line">$\color&#123;silver&#125;&#123;字体示例&#125;$</div><div class="line"></div><div class="line">&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=PowderBlue&gt;这里的背景色是：PowderBlue，  十六进制颜色值： #B0E0E6，rgb(176, 224, 230)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</div></pre></td></tr></table></figure></p><blockquote><p>此段引用CSND：<a href="https://blog.csdn.net/thither_shore/article/details/52181464" target="_blank" rel="external">https://blog.csdn.net/thither_shore/article/details/52181464</a></p></blockquote><h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>可用 <code>---</code> 标在每一段最后或者下一段开头</p><hr><h2 id="0X01排序"><a href="#0X01排序" class="headerlink" title="0X01排序"></a>0X01排序</h2><h3 id="有序排序"><a href="#有序排序" class="headerlink" title="有序排序"></a>有序排序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 第一句</div><div class="line">2. 第二句</div><div class="line">3. 第三句</div></pre></td></tr></table></figure><h3 id="无序排序，可以选择-、-、-等"><a href="#无序排序，可以选择-、-、-等" class="headerlink" title="无序排序，可以选择+、 -、 * 等"></a>无序排序，可以选择<code>+、 -、 * 等</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">+ 第一句</div><div class="line">+ 第二句</div><div class="line">- 第三句</div><div class="line">- 第四句</div><div class="line">* almost final</div><div class="line">* final</div></pre></td></tr></table></figure><hr><h2 id="0X02引用"><a href="#0X02引用" class="headerlink" title="0X02引用"></a>0X02引用</h2><blockquote><p>这是一段引用<br>    这是引用的代码块<br>    public static void main(String[] args){<br>        System.out.println(“hello world”);<br>    }</p></blockquote><hr><h2 id="0X03媒体文件"><a href="#0X03媒体文件" class="headerlink" title="0X03媒体文件"></a>0X03媒体文件</h2><p>图片：<code>![图片文本](图片地址)</code><br>链接：<code>[链接文本](链接地址)</code><br>通常链接分为三种</p><ol><li>行内式<code>[text](http://baidu.com)</code></li><li>参考式<code>[text][url]</code>，其中url可为链接标记，置于文中任意位置<br><code>[url]：http://baidu.com</code></li><li>自动链接<code>&lt;http://baidu.com&gt;</code></li></ol><hr><h2 id="0X04表格"><a href="#0X04表格" class="headerlink" title="0X04表格"></a>0X04表格</h2><p>表格对齐格式<br>标题|标题|标题|<br>| - | :-: | -:|<br>| 居左测试文本 | 居中测试文本 | 居右测试文本 |<br>|居左测试文本1|居中测试文本2|居右测试文本3|<br>|居左测试文本11|居中测试文本22|居右测试文本33|<br>|居左测试文本111|居中测试文本222|居右测试文本333|<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">|标题|标题|标题|</div><div class="line">|:---|:---:|---:|</div><div class="line">|居左测试文本|居中测试文本|居右测试文本|</div><div class="line">|居左测试文本1|居中测试文本2|居右测试文本3|</div><div class="line">|居左测试文本11|居中测试文本22|居右测试文本33|</div><div class="line">|居左测试文本111|居中测试文本222|居右测试文本333|</div></pre></td></tr></table></figure></p><h2 id="0X05补充"><a href="#0X05补充" class="headerlink" title="0X05补充"></a>0X05补充</h2><blockquote><p><a href="https://www.jianshu.com/p/82e730892d42" target="_blank" rel="external">https://www.jianshu.com/p/82e730892d42</a></p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> 规范文档 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 规范文档 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>JQuery获取当前行的数据</title>
+      <link href="/2018/05/28/JQuery%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%A1%8C%E7%9A%84%E6%95%B0%E6%8D%AE/"/>
+      <url>/2018/05/28/JQuery%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%A1%8C%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
+      <content type="html"><![CDATA[]]></content>
+      
+      <categories>
+          
+          <category> JQuery Web基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JQuery Web基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>How to get github pack</title>
+      <link href="/2018/05/27/How-to-get-github-pack/"/>
+      <url>/2018/05/27/How-to-get-github-pack/</url>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>6+3解决方案</title>
+      <link href="/2017/07/24/6-3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+      <url>/2017/07/24/6-3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <content type="html"><![CDATA[<h4 id="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！"><a href="#在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！" class="headerlink" title="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！"></a>在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！</h4><a id="more"></a><h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><h4 id="1-font-awesome被过滤掉的解决方案（20170724）"><a href="#1-font-awesome被过滤掉的解决方案（20170724）" class="headerlink" title="1. font-awesome被过滤掉的解决方案（20170724）"></a>1. font-awesome被过滤掉的解决方案（20170724）</h4><p>sol：在web.xml中添加下列信息即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;servlet-mapping&gt;</div><div class="line">    &lt;servlet-name&gt;default&lt;/servlet-name&gt;</div><div class="line">    &lt;url-pattern&gt;*.woff&lt;/url-pattern&gt;</div><div class="line">&lt;/servlet-mapping&gt;</div></pre></td></tr></table></figure></p><p>and，restart server<br>原理：引用小图标时，需要加载一些字体信息</p><h4 id="2-关于问卷调查中的”出生年月日”这一项，当”-form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮"><a href="#2-关于问卷调查中的”出生年月日”这一项，当”-form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮" class="headerlink" title="2. 关于问卷调查中的”出生年月日”这一项，当”#form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮"></a>2. 关于问卷调查中的”出生年月日”这一项，当”#form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮</h4><p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E5%B9%B4%E6%9C%88%E6%97%A5" alt=""><br>sol：在日期的语句后加上对于再次刷新时出生年月日的判断<br>原语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">(function($) &#123;</div><div class="line">        $(&quot;#dateBirth&quot;).datetimepicker(&#123;</div><div class="line">            // startView:最开始的视图0--小时视图,1--天视图,2--月视图,3--年视图,4--十年视图</div><div class="line">            format: &apos;yyyy-mm-dd&apos;,</div><div class="line">            language: &apos;zh-CN&apos;,</div><div class="line">            weekStart: 1, //周一为一周起点</div><div class="line">            autoclose: 1, //选择时间后自动关闭日历</div><div class="line">            startView: 4, //开始视图为十年视图</div><div class="line">            minView: 2,</div><div class="line">            forceParse: 0,</div><div class="line">            initialDate: new Date(2005,0,1)</div><div class="line">        &#125;);</div><div class="line">&#125;(jQuery));</div></pre></td></tr></table></figure></p><p>修改后的语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">(function($) &#123;</div><div class="line">        $(&quot;#dateBirth&quot;).datetimepicker(&#123;</div><div class="line">            // startView:最开始的视图0--小时视图,1--天视图,2--月视图,3--年视图,4--十年视图</div><div class="line">            format: &apos;yyyy-mm-dd&apos;,</div><div class="line">            language: &apos;zh-CN&apos;,</div><div class="line">            weekStart: 1, //周一为一周起点</div><div class="line">            autoclose: 1, //选择时间后自动关闭日历</div><div class="line">            startView: 4, //开始视图为十年视图</div><div class="line">            minView: 2,</div><div class="line">            forceParse: 0,</div><div class="line">            initialDate: new Date(2005,0,1)</div><div class="line">        &#125;).on(&apos;hide&apos;,function(e) &#123;</div><div class="line">            $(&apos;#form1&apos;).data(&apos;bootstrapValidator&apos;)</div><div class="line">                .updateStatus(&apos;dateBirth&apos;, &apos;NOT_VALIDATED&apos;,null)</div><div class="line">                .validateField(&apos;dateBirth&apos;);</div><div class="line">        &#125;);</div><div class="line">&#125;(jQuery));</div></pre></td></tr></table></figure></p><h2 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h2><h4 id="1-6-3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）"><a href="#1-6-3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）" class="headerlink" title="1. 6+3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）"></a>1. 6+3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）</h4><p>sol：经过多次人工测试，当对科目有特别强烈的兴趣的时候，可能Holland和MBTI所对应的表中无推荐的专业的交集，出现推荐的科目是给出所填写的基本信息中的成绩最好的三门。</p><h4 id="2-高考项目中出现新用户无法测试Holland（20170726）"><a href="#2-高考项目中出现新用户无法测试Holland（20170726）" class="headerlink" title="2. 高考项目中出现新用户无法测试Holland（20170726）"></a>2. 高考项目中出现新用户无法测试Holland（20170726）</h4><p>sol：在ResultSearchServiceImpl实例中的getScoreResultByUserId函数中添加非空判断</p><h4 id="3-本地用-bat程序可正常运行，前端和逻辑部分已布置上ECS可通过www-whsyjy-cn正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题-20170730"><a href="#3-本地用-bat程序可正常运行，前端和逻辑部分已布置上ECS可通过www-whsyjy-cn正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题-20170730" class="headerlink" title="3. 本地用.bat程序可正常运行，前端和逻辑部分已布置上ECS可通过www.whsyjy.cn正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题(20170730)"></a>3. 本地用.bat程序可正常运行，前端和逻辑部分已布置上ECS可通过<a href="http://www.whsyjy.cn" target="_blank" rel="external"><code>www.whsyjy.cn</code></a>正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题(20170730)</h4><p>sol：此解决方案只限于解决当前问题用</p><ol><li>让云端程序访问目前存在于本地的数据库，从而解决当前问题（遇到的问题是，ECS上已开放 出端口 ，访问仍遭到限制，当前正在加紧解决)</li><li>已将可以运行的所有程序打成一个包，解压后Windows下可以通过点击 启动程序.bat ，然后在浏览器中输入<code>localhost:8080</code>即可直接访问（附程序链接：<a href="http://pan.baidu.com/s/1eR7IRya" target="_blank" rel="external">链接: http://pan.baidu.com/s/1eR7IRya 密码: pjk2</a></li></ol><p>sol：远程连接后，可通过Navicat进行数据传输，然后配置有关数据表的触发器和序列（若触发器没有配置，则会导致数据无法写入数据表，若序列没有配置，则会导致触发器运行时报错）</p><h4 id="4-centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet-1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）"><a href="#4-centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet-1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）" class="headerlink" title="4. centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet 1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）"></a>4. centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet 1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）</h4><p>sol：将实例名和数据库用户名两个概念混淆，用实例名登录数据库当然不能远程连接上。然后用以下命令创建空间，创建用户，将空间和用户相匹配，然后给用户赋予一定的权限。具体代码实现如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1. 创建表空间</div><div class="line">create tablespace bocodbdbs logging datafile &apos;/data/oracle/oradata/orcl/zzkj_tpspace01.dbf&apos; size 1024m autoextend on next 32m maxsize unlimited extent management local;</div><div class="line">2. 创建用户，并将表空间和用户配对</div><div class="line">create user &apos;username&apos; identified by &apos;password&apos; default tablespace &apos;tablespace&apos;;</div><div class="line">3. 赋给用户最高权限</div><div class="line">grant connect,resource,dba to &apos;username&apos;;</div><div class="line">grant all privileges to &apos;username&apos;;</div></pre></td></tr></table></figure></p><blockquote><p>可参考 <a href="http://blog.csdn.net/bocodb/article/details/2799351" target="_blank" rel="external">http://blog.csdn.net/bocodb/article/details/2799351</a></p></blockquote><h4 id="5-基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。"><a href="#5-基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。" class="headerlink" title="5. 基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。"></a>5. 基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。</h4><p>sol：ok，先检查监听情况和防火墙设置，没毛病，然后按照4的步骤重新建一个数据库，并没有什么用，然后将这个问题通过工单的形式呈递给了阿里运维工程师，发现是iptables防火墙的问题，解决办法可参考下面链接</p><blockquote><p><a href="https://jingyan.baidu.com/article/066074d64f433ec3c21cb000.html" target="_blank" rel="external">https://jingyan.baidu.com/article/066074d64f433ec3c21cb000.html</a></p></blockquote><h4 id="6-用vnc-viewer访问远程桌面，桌面卡住"><a href="#6-用vnc-viewer访问远程桌面，桌面卡住" class="headerlink" title="6. 用vnc viewer访问远程桌面，桌面卡住"></a>6. 用vnc viewer访问远程桌面，桌面卡住</h4><p>sol： <code>vncserver -kill : 1</code>挂掉桌面， <code>vncserver : 1</code>生成桌面</p><h4 id="7-该服务器重启后，数据库连不上"><a href="#7-该服务器重启后，数据库连不上" class="headerlink" title="7. 该服务器重启后，数据库连不上"></a>7. 该服务器重启后，数据库连不上</h4><p>sol：不要方，不要急，久病成医。</p><ol><li>首先看xshell是否能用<code>sqlplus</code>连上数据库</li><li>能连接，则看<code>telnet</code>能否连接到端口</li><li>若超时，则查看iptables防火墙是否开启，若开启，则<code>service iptables stop</code>关闭</li><li>再次通过Navicat连接，若报无监听错误，则查看监听器状态<code>lsnrctl status</code></li><li>打开监听器状态，<code>lsnrctl start</code>，尝试再次连接</li></ol><h4 id="8-服务器重启后，svn不能远程连接"><a href="#8-服务器重启后，svn不能远程连接" class="headerlink" title="8. 服务器重启后，svn不能远程连接"></a>8. 服务器重启后，svn不能远程连接</h4><p>sol：有很大可能是svnserve服务没有打开，可以通过<code>svnserve -d</code>独立端口监控进程</p><blockquote><p><a href="https://my.oschina.net/alfredliukai/blog/507812" target="_blank" rel="external">https://my.oschina.net/alfredliukai/blog/507812</a></p></blockquote><h2 id="还没解决的问题（堆着存一下）"><a href="#还没解决的问题（堆着存一下）" class="headerlink" title="还没解决的问题（堆着存一下）"></a>还没解决的问题（堆着存一下）</h2><h4 id="1-高考志愿规划的一个调查和三个测试页面做完后的跳转页面，包括重定向和框体重复两个问题（20170726）"><a href="#1-高考志愿规划的一个调查和三个测试页面做完后的跳转页面，包括重定向和框体重复两个问题（20170726）" class="headerlink" title="1. 高考志愿规划的一个调查和三个测试页面做完后的跳转页面，包括重定向和框体重复两个问题（20170726）"></a>1. 高考志愿规划的一个调查和三个测试页面做完后的跳转页面，包括重定向和框体重复两个问题（20170726）</h4><blockquote><h4 id="附：该项目一期的树状图（20170724）"><a href="#附：该项目一期的树状图（20170724）" class="headerlink" title="附：该项目一期的树状图（20170724）"></a>附：该项目一期的树状图（20170724）</h4><h5 id="main"><a href="#main" class="headerlink" title="main"></a>main</h5></blockquote><p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3-main.png" alt="main"></p><blockquote><h5 id="main-java-com-gaokao"><a href="#main-java-com-gaokao" class="headerlink" title="main-java-com.gaokao"></a>main-java-com.gaokao</h5></blockquote><p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-java.png" alt="main-java-com.gaokao"></p><blockquote><h5 id="main-resource"><a href="#main-resource" class="headerlink" title="main-resource"></a>main-resource</h5></blockquote><p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-resources.png" alt="main-resource"></p><blockquote><h5 id="main-webapp"><a href="#main-webapp" class="headerlink" title="main-webapp"></a>main-webapp</h5></blockquote><p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3_main-webapp.png" alt="main-webapp"></p>]]></content>
+      
+      <categories>
+          
+          <category> javaWeb </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javaWeb 项目 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>1099端口被占用问题</title>
+      <link href="/2017/05/01/1099%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/"/>
+      <url>/2017/05/01/1099%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<h4 id="今天一大早起来，兴致勃勃想要撸码，补一补这些天要填的坑，结果一运行出现了这么一幕（无奈脸-）"><a href="#今天一大早起来，兴致勃勃想要撸码，补一补这些天要填的坑，结果一运行出现了这么一幕（无奈脸-）" class="headerlink" title="今天一大早起来，兴致勃勃想要撸码，补一补这些天要填的坑，结果一运行出现了这么一幕（无奈脸=_=#）"></a>今天一大早起来，兴致勃勃想要撸码，补一补这些天要填的坑，结果一运行出现了这么一幕（无奈脸=_=#）</h4><a id="more"></a><p>具体情况参考以下图片</p><h2 id=""><a href="#" class="headerlink" title=""></a><img src="&quot;http://oei91bbtj.bkt.clouddn.com/1099_1.png&quot;" alt=""></h2><p>然后一脸懵的我四处找寻答案，于是有了以下几种观点：</p><blockquote><ul><li><code>netstat -aon|findstr &quot;1099&quot;</code>查找占用的进程，找出该进程的进程号，然后用<code>tasklist|findstr &quot;..&quot;</code>来找到对应的进程名称，然后用<code>taskkill /pid ..  /f</code>来终止某进程</li><li>在第一种方法的基础上用资源管理器关掉某进程</li><li>直接更改端口号</li></ul></blockquote><hr><p>经过几次的尝试，发现前两种方法并不可行，而最后一种方法被否决了，但，死马当活马医，在我把1099的端口号改为2099后，就奇迹般的可以运行了。这种蜜汁错误还是让我一头雾水。</p>]]></content>
+      
+      <categories>
+          
+          <category> Intellij IDEA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Intellij IDEA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Building</title>
+      <link href="/2016/10/04/Building/"/>
+      <url>/2016/10/04/Building/</url>
+      <content type="html"><![CDATA[<h1 id="In-class"><a href="#In-class" class="headerlink" title="In class"></a>In class</h1><h2 id="fail"><a href="#fail" class="headerlink" title="fail:"></a>fail:</h2><p>刚开始时，使用的Node.js是最新版的，然后配置了系统环境，执行命令：<code>npm install hexo -g</code> 时，加载了很长时间，然后并没有进行到下一步。<br><a id="more"></a></p><h2 id="improve"><a href="#improve" class="headerlink" title="improve:"></a>improve:</h2><p>换用Node.js的familiar版，成功解决了上述问题。<br>接着在任意文件夹中新建一个目录，cd命令到相应的文件夹，之后就开始启用命令行大法了。首先初始化，之后接着启动hexo server，如果在浏览器中访问<code>localhost:4000</code>（这个地址是可以调控的，如果电脑中安装了福昕阅读器，则这个端口会被堵塞）成功，则说明此时hexo配置成功。然后通过修改配置文件_config.的deploy属性来将本地hexo和远程Github关联。<br><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004165740.png" alt=""><br>在修改配置文件的时候，一定要注意空格（type、repository、branch前要加空格，冒号后面也要加一个空格）<br>接着安装hexo-deployer-git：<code>npm install hexo-deployer-git -S</code><br>课上就做到了这一步，下面请允许我盗一波图<br><img src="http://oei91bbtj.bkt.clouddn.com/Building2.png" alt=""><br><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004171646.png" alt=""></p><blockquote><p>版权所有@姜建林学长，感谢大力支持</p></blockquote><hr><h1 id="After-class"><a href="#After-class" class="headerlink" title="After class"></a>After class</h1><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>一开始接触hexo的GUI是landscape主题，除了丑之外一无是处，然后我就毅然决然的踏上了寻找好看主题的不归路。<br>首先是在知乎上搜索的，看到了一系列的<strong><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">比较好的主题</a></strong><br><img src="http://oei91bbtj.bkt.clouddn.com/Building4.png" alt=""></p><p>前十名的主题我都下载下来放在theme文件夹里面然后一个个的试，最后有三个入了法眼，一个非<strong><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">next</a></strong>莫属；另一个是<strong><a href="https://haojen.github.io/" target="_blank" rel="external">Haojen</a></strong> 的一个主题，以简洁和规则而凸显，特别是体现在首页；还有一个是<strong><a href="http://litten.github.io/" target="_blank" rel="external">Litten</a></strong>的博客,独有的特点是可以自主添加相册，其中标签的处理和页面利用做的比较好，还可以增加友链。<br>一开始我是采用Haojen的那个主题，然后出现了一些比较头疼的问题:</p><ol><li>一开始根目录的_config.文件要求与theme下的对应主题的_config.文件保持一致，然后更改的时候需要更改两个，操作的复杂度增加了</li><li>刷新起来特别麻烦，每次在<code>sublime text3</code>中修改完后，都必须ctrl+C取消后，然后再hexo s运行一遍才能看到更新之后的效果</li><li>当时添加图片方面做的还不是很好，放在本地的图片并不能很好的嵌入其中</li><li>在网上更新的各种插件并不是很多，然后论坛中谈论的频率并不是很大， 所以我觉得这对之后维护以及更新不是很有利，可塑性很小</li></ol><p>基于以上的四点原因，我决定放弃这个主题，虽然已经搭建了一天半的时间，但还是狠狠心给丢了。<br>同时我承认第二次是有用Litten的念头的，然后我在群邮件里面翻了一下，发现有蛮多的人用，觉得没有新意。所以转了一圈，又回归到了我强大的next主题，回归到了经典的Scheme–Muse（主要是紧凑型的Mist太多人用，而Pisces文章的可读性宽度太小，慵懒的我也不愿意去找对应的CSS样式进行更改）话虽如此，但是Muse的大片留白还是很充满想象空间的，有种中国水墨画的味道，而且可以降低阅读疲劳，其中的sidebar也很cute，所以最终就确定了为next主题</p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>最开始的时候，我是将图片统一存在主题下的images文件夹下，然后，我就琢磨，将文件夹上传至github的时候图片占了很大的空间，然后如果别人要参考下载的话也需要消耗下载图片的时间(命令行下载或上传的速度我就不过多描述了，用过的孩子都懂其中的痛)<br>就在我快要放弃，使用360云的时候，万能的知乎给了我答案，那就是七牛云，注册后就有1个G的免费空间，可以产生外链，将外链代替原本的本地地址可以有效地解决这个问题。（其中在设置七牛云的时候，不要调成Private，这样产生不了外链）<br>有一段时间，我沉迷于把单色调的background换成图片形式，但一直没有成功。今天翻看别人的博客的时候，发现了<strong><a href="https://1053061407.github.io/" target="_blank" rel="external">徐运放同学</a></strong>的博客已经换了背景图片，然后私下里交流了一下，发现用的方法是一样的，就是下图：<br><img src="http://oei91bbtj.bkt.clouddn.com/Building5.png" alt=""><br>解决方法，将其中的本地链接换成了网络外链，完美解决，然后高兴地太早了，出现了这种情况：<br><img src="http://oei91bbtj.bkt.clouddn.com/Building6.jpg" alt=""><br>背景图片随着页面滚动，不是固定的状态，然后找了一下CSS样式里面的background-position，调成fixed的状态，然后期待奇迹发生的我并没有看到什么改观。。<strong> 希望知道如何调节的小伙伴在下方的讨论区给我留言，thanks a lot</strong></p><h2 id="评论框"><a href="#评论框" class="headerlink" title="评论框"></a>评论框</h2><p>关于评论框，我是选择了<strong><a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></strong>这个神奇的平台，推荐还没有设立评论区的同学可以去尝试一下，只需要简单的几步就可以达到目的<br><img src="http://oei91bbtj.bkt.clouddn.com/Building7.png" alt=""></p><h2 id="音乐栏"><a href="#音乐栏" class="headerlink" title="音乐栏"></a>音乐栏</h2><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&id=756701&auto=1&height=66"></iframe><br>三板斧可以搞定：<br><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004231410.png" alt=""></p><h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><ul><li>如果首页几篇文章展开起来放，会显得特别乱，没有条理，加一个<code>&lt;!--more--&gt;</code>可以很好地解决这个问题</li><li>如果标签、关于、分类页面没有搭建起来的话，建议去除首页中相应的标签，以免看到很粗糙的部分</li><li>期间因为_config.混乱过一次，经历过一次重装，建议在改动之前做好相应备份</li><li>推荐几个网站：</li><li><ol><li><strong><a href="http://www.cnblogs.com/kysnail/archive/2012/03/16/2399589.html" target="_blank" rel="external">msysgit的基本操作</a></strong></li></ol></li><li><ol><li><strong><a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html?qq-pf-to=pcqq.group" target="_blank" rel="external">截图版安装hexo并部署到github</a></strong></li></ol></li><li><ol><li><strong><a href="http://www.jianshu.com/p/a2fe56d11c4f" target="_blank" rel="external">搭建hexo时遇到的坑</a></strong></li></ol></li><li><ol><li><strong><a href="http://www.jianshu.com/p/21d355525bdf" target="_blank" rel="external">MarkDown学习小结</a></strong></li></ol></li></ul><h1 id="To-the-future"><a href="#To-the-future" class="headerlink" title="To the future"></a>To the future</h1><ul><li>添加搜索框功能</li><li>添加打赏功能以及附带的一些操作</li><li>通透理解next主题，在接下来的网页知识后，自己修改CSS样式以及排版</li><li>将背景图片自然而不突兀的添加上去，并实现固定</li><li>将剩余的几个页面很好的搭建起来，并及时维护，添加一些好玩的插件</li></ul><hr><h5 id="我是华丽的分割线"><a href="#我是华丽的分割线" class="headerlink" title="我是华丽的分割线"></a>我是华丽的分割线</h5><ul><li>time：170501<br>今天碰到一些问题，想写一些博客，然后就把hexo重新扒出来了，然后发现有些东西已然忘记，经过一个下午的search行动，终于弄得差不多了，在最后，<code>hexo deploy</code>这一步，本应该无波无澜的，结果被自己坑到了，在重新更改配置文件的时候，把deploy属性的最后后缀改成了<code>github</code>，导致尝试用万金油方法终不得成效。<br>万金油方法如下：<br><code>npm install hexo-deployer-git -save</code>然后再进行<code>hexo deploy</code></li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 静态博客的搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>AboutGithub</title>
+      <link href="/2016/10/04/AboutGithub/"/>
+      <url>/2016/10/04/AboutGithub/</url>
+      <content type="html"><![CDATA[<h1 id="创建一个github账号"><a href="#创建一个github账号" class="headerlink" title="创建一个github账号"></a><a href="https://github.com" target="_blank" rel="external">创建一个github账号</a></h1><a id="more"></a><p><img src="http://oei91bbtj.bkt.clouddn.com/AboutGithub1.png" alt=""></p><hr><h1 id="创建一个工程"><a href="#创建一个工程" class="headerlink" title="创建一个工程"></a>创建一个工程</h1><p><img src="http://oei91bbtj.bkt.clouddn.com/AboutGithub2.png" alt=""></p><hr><h1 id="博客建立中。。"><a href="#博客建立中。。" class="headerlink" title="博客建立中。。"></a>博客建立中。。</h1><h2 id="loading…"><a href="#loading…" class="headerlink" title="loading…"></a>loading…</h2><hr><h1 id="配置git全局变量"><a href="#配置git全局变量" class="headerlink" title="配置git全局变量"></a>配置git全局变量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;yourname&quot; //匹配姓名</div><div class="line">git config --global user.email &quot;youremail&quot; //匹配邮箱</div><div class="line">//之后可以通过这样的命令来查看自己输入的信息</div><div class="line">git config --global user.name</div><div class="line">git config --global user.email</div></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C youremail@example.com</div><div class="line">cd ~/.ssh</div><div class="line">vim id_rsa.pub</div><div class="line">//输入完成后会出现一串字符，copy下来（不能漏掉最后的一部分），添加到github里面的SSH Keys里面，会出现以下的图片</div><div class="line">//生成成功后可以由下个命令验证</div><div class="line">ssh git@github.com</div></pre></td></tr></table></figure><h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004164201.png" alt=""></h2><h1 id="博客建立后，使用命令行将本地的文件推到github上"><a href="#博客建立后，使用命令行将本地的文件推到github上" class="headerlink" title="博客建立后，使用命令行将本地的文件推到github上"></a>博客建立后，使用命令行将本地的文件推到github上</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add -A //将本地所有文档推至缓存区</div><div class="line">git commit -m&quot;XXX&quot;//提交，加上描述</div><div class="line">git remote add origin git@github.com:lucuspring/lucuspring.github.io.git //将本地和云端连接起来</div><div class="line">git push -u origin master//将本地文档推送至云端</div></pre></td></tr></table></figure><hr><h1 id="之后就可以通过链接https-lucuspring-github-io来访问网页了"><a href="#之后就可以通过链接https-lucuspring-github-io来访问网页了" class="headerlink" title="之后就可以通过链接https://lucuspring.github.io来访问网页了"></a>之后就可以通过链接<a href="https://lucuspring.github.io">https://lucuspring.github.io</a>来访问网页了</h1>]]></content>
+      
+      <categories>
+          
+          <category> 静态博客的搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2016/10/02/hello-world/"/>
+      <url>/2016/10/02/hello-world/</url>
+      <content type="html"><![CDATA[<h5 id="每接触一个新的东西，必先撸一个helloWorld-，这已经成为一种习惯抑或是一种信念或执着"><a href="#每接触一个新的东西，必先撸一个helloWorld-，这已经成为一种习惯抑或是一种信念或执着" class="headerlink" title="每接触一个新的东西，必先撸一个helloWorld ，这已经成为一种习惯抑或是一种信念或执着"></a>每接触一个新的东西，必先撸一个<code>helloWorld</code> ，这已经成为一种习惯抑或是一种信念或执着</h5><a id="more"></a><hr><h1 id="The-beginning"><a href="#The-beginning" class="headerlink" title="The beginning"></a>The beginning</h1><p>刚开始的时候是没有接触过也没有了解过可以用这种方法来建造一个博客(或者说是一种有模板的网页)。在逐渐了解的过程中，发现这里面另有一番洞天景象，由于下列的原因，我开始准备干起来：</p><ul><li>首先当然是域名免费啊！！！（如果要我买域名的话，绝对不干，一脸衰.jpg）</li><li>其次看了几个写的比较好排版也很优美的博客，觉得这才叫博客嘛！Hexo的自主性和可规划性抹平了之前某浪微博和某讯微博对我造成的阴影。</li><li>最重要的一点是，终于找到了可以承载心得和体会的平台，在这里可以分享和讨论，可以记录自己的思考和学习成果，可以把琐碎的一些东西给归纳和总结然后写出来</li></ul><hr><h1 id="Then"><a href="#Then" class="headerlink" title="Then"></a>Then</h1><p>工欲善其事必先利其器，要想搭建一个静态博客，需要的工具有：</p><blockquote><p>一个github的账号，以及已经建立的与本地连接起来的仓库<br><a href="&quot;https://nodejs.org/en/&quot;">Node.js</a> –Javascript运行环境<br><a href="&quot;https://git-scm.com/downloads/&quot;">git</a> –开源分布式版本控制系统<br>使用命令行安装hexo<code>npm install hexo -g</code><br>如果需要更换主题的话，可以 <a href="&quot;https://www.zhihu.com/question/24422335&quot;">寻求知乎</a><br>如果想向网页中添加图片，又不想把图片上传到github，可以借助这个平台– <a href="&quot;https://portal.qiniu.com/create&quot;">七牛云</a><br>如果想添加评论区，可以借助 <a href="&quot;http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241&quot;">duoshuo</a><br>之后可以根据文章的热评度是否设置打赏功能…<br>And so on..</p></blockquote><hr><h1 id="To-be-continue"><a href="#To-be-continue" class="headerlink" title="To be continue"></a>To be continue</h1><h4 id="想了解更多细节内容敬请关注后续文章"><a href="#想了解更多细节内容敬请关注后续文章" class="headerlink" title="想了解更多细节内容敬请关注后续文章"></a>想了解更多细节内容敬请关注后续文章</h4><hr>]]></content>
+      
+      <categories>
+          
+          <category> 静态博客的搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 心得 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
