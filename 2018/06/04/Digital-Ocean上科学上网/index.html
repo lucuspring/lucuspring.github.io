@@ -12,7 +12,7 @@
     
     <title>
         
-            分类: 静态博客的搭建 | 
+            Digital Ocean上科学上网 | 
         
         Lucuspring&#39;s Blogs
     </title>
@@ -37,8 +37,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Chang Zhan">
-    <meta name="description" itemprop="description" content="天朗气清，惠风和畅">
-    <meta name="keywords" content="lucuspring 天朗气清">
+    <meta name="description" itemprop="description" content="前段时间一直说写个综合的博客来描述科学上网的过程，给自己做一个记录的同时，分享一些fun。因为没有动力，所以这篇博客一直没有面世，直到昨天…（手动微笑.jpg）">
+    <meta name="keywords" content="lucuspring 天朗气清,Tips">
 
     <!-- Site Verification -->
     
@@ -67,29 +67,62 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://lucuspring.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="分类: 静态博客的搭建 | Lucuspring&#39;s Blogs">
+    <meta property="og:title" content="Digital Ocean上科学上网 | Lucuspring&#39;s Blogs">
     <meta property="og:image" content="/img/favicon.png" />
-    <meta property="og:description" content="天朗气清，惠风和畅">
-    
+    <meta property="og:description" content="前段时间一直说写个综合的博客来描述科学上网的过程，给自己做一个记录的同时，分享一些fun。因为没有动力，所以这篇博客一直没有面世，直到昨天…（手动微笑.jpg）">
+    <meta property="og:article:tag" content="Tips"> 
 
+    
+        <meta property="article:published_time" content="6月 04, 2018" />
+        <meta property="article:modified_time" content="6月 04, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="分类: 静态博客的搭建 | Lucuspring&#39;s Blogs">
-    <meta name="twitter:description" content="天朗气清，惠风和畅">
+    <meta name="twitter:title" content="Digital Ocean上科学上网 | Lucuspring&#39;s Blogs">
+    <meta name="twitter:description" content="前段时间一直说写个综合的博客来描述科学上网的过程，给自己做一个记录的同时，分享一些fun。因为没有动力，所以这篇博客一直没有面世，直到昨天…（手动微笑.jpg）">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="http://lucuspring.github.io" />
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://lucuspring.github.io/categories/静态博客的搭建/index.html" />
+        <link rel="canonical" href="http://lucuspring.github.io/2018/06/04/Digital-Ocean上科学上网/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Lucuspring&#39;s Blogs",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Chang Zhan",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "Hi, nice to meet you, ,Keep Living, Keep Coding"
+    },
+    "headline": "Digital Ocean上科学上网",
+    "url": "http://lucuspring.github.io/2018/06/04/Digital-Ocean上科学上网/index.html",
+    "datePublished": "6月 04, 2018",
+    "dateModified": "6月 04, 2018",
+    "description": "前段时间一直说写个综合的博客来描述科学上网的过程，给自己做一个记录的同时，分享一些fun。因为没有动力，所以这篇博客一直没有面世，直到昨天…（手动微笑.jpg）",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://lucuspring.github.io"
+    }
+}
+</script>
 
 
     
@@ -285,208 +318,285 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#服务器端搭建"><span class="post-toc-number">1.</span> <span class="post-toc-text">服务器端搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#基础建设"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">基础建设</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#前提"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">前提</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#服务器安装"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">服务器安装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#运行服务器"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">运行服务器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#开启单个端口"><span class="post-toc-number">1.1.3.1.</span> <span class="post-toc-text">开启单个端口</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#开启多端口"><span class="post-toc-number">1.1.3.2.</span> <span class="post-toc-text">开启多端口</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#配置开机自启"><span class="post-toc-number">1.1.3.3.</span> <span class="post-toc-text">配置开机自启</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#进阶部分-BBR加速"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">进阶部分-BBR加速</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#一键式安装"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">一键式安装</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#客户端连接"><span class="post-toc-number">2.</span> <span class="post-toc-text">客户端连接</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#工具获取"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">工具获取</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解压运行"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">解压运行</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#浏览器控制流量"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">浏览器控制流量</span></a></li></ol></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://oei91bbtj.bkt.clouddn.com/Hexo_building.jpg">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://oei91bbtj.bkt.clouddn.com/digitalocean_ss.png)">
+    
+            <p class="article-headline-p">
+                Digital Ocean上科学上网
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Chang Zhan</strong>
+        <span>6月 04, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC20lEQVR42u3aQXLcMAwEwP3/p5MHpKydAel4TbZOroq0YuuCYIDXnyuvFzY2NjY2NjY2NvZHsl/xlTz15sX/3Ln37W+ewsbGxj6anRz3q1fmR/nqjcmdz7/wfGZsbGzse9jtQZNilhy3pQ7PjI2NjY0dFInn30kakuc7sbGxsbHX2btKVN60YGNjY2PvDZXy0pUg26d+LEvDxsbG/nj2LNz/2b//63wbGxsb+4PZS+uMcVFJSlTy1LblS2xsbOyD2OsrMrvKXj5gGLZJ2NjY2Bewk7LRfoL8cG0T0uKxsbGxT2UnP5cPXFeQe+MkbGxs7HvY+X/683KyN+ifDZujVgQbGxv7CHbbSKwsa+aLO+2/RsUYGxsb+wL2eqjUjhaK8lMODLCxsbHvZD+XjWS4O+PlnzIPp7CxsbHvZOcv/u64Px9CD1d2sLGxsQ9l50PTlfHtLBhqRxFLWRo2Njb2L2QnhSEvKrvCqZXACxsbG/tOdl6W8pYj/yjtKmdSILGxsbFvYLexzqzg5UfMQ6t22ICNjY19D7v9HLO1yxyZtyJv2hhsbGzsQ9l1GYgbg/w384gqH+7WUxFsbGzsI9izAW0eLe0aNuT3YGNjY9/AXue1Szn5GKAdFdQdGDY2NvYR7Lwtef7pNuipx7TLb8fGxsY+m50MbtvlmzZOWgmVhh0YNjY29hHsNrKfxT1JUWxHznULhI2NjX0oux3rJp+jXfGZRUXtWg82Njb2qey8hAxD+VHhye8phsrY2NjYh7Lba2XcOwuk2iBpuKmEjY2N/WvZr/hqn0pCpaTByBubuhXBxsbGPoidr++06zVJ8xA1Em2EhI2NjX0luz3cyj3tB11pb7CxsbGxZ61IG+UnhXAWSGFjY2NjJ2FQ21rsalSKAQM2Njb2Bew8VJrBdjUzbXuDjY2NfQN7pYVoF3fyCCn/lN8+38bGxsb+YPY9FzY2NjY2NjY2NvbHXH8BaOELbSJ5f4AAAAAASUVORK5CYII=">
+    
+</ul>
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/10/04/Building/">Hexo Building</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Tips/">Tips</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
         
-            In classfail:刚开始时，使用的Node.js是最新版的，然后配置了系统环境，执行命令：npm install hexo -g 时，加载了很长时间，然后并没有进行到下一步。
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
         
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/10/04/Building/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Chang Zhan's avatar">
-            </div>
-            <div>
-                <strong>Chang Zhan</strong>
-                <span>10月 04, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/静态博客的搭建/">静态博客的搭建</a>
-            </span>
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Digital Ocean上科学上网&url=http://lucuspring.github.io/2018/06/04/Digital-Ocean上科学上网/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Digital Ocean上科学上网&url=http://lucuspring.github.io/2018/06/04/Digital-Ocean上科学上网/index.html&via=Chang Zhan" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://lucuspring.github.io/2018/06/04/Digital-Ocean上科学上网/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://lucuspring.github.io/2018/06/04/Digital-Ocean上科学上网/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Lucuspring&#39;s Blogs&title=Digital Ocean上科学上网&summary=天朗气清，惠风和畅&pics=http://lucuspring.github.io/img/favicon.png&url=http://lucuspring.github.io/2018/06/04/Digital-Ocean上科学上网/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
 </div>
 
-            
-            
-        
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://oei91bbtj.bkt.clouddn.com/github.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/10/04/AboutGithub/">AboutGithub</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            创建一个github账号
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/10/04/AboutGithub/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Chang Zhan's avatar">
-            </div>
-            <div>
-                <strong>Chang Zhan</strong>
-                <span>10月 04, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/静态博客的搭建/">静态博客的搭建</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://oei91bbtj.bkt.clouddn.com/hello_world.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/10/02/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            每接触一个新的东西，必先撸一个helloWorld ，这已经成为一种习惯抑或是一种信念或执着
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/10/02/hello-world/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Chang Zhan's avatar">
-            </div>
-            <div>
-                <strong>Chang Zhan</strong>
-                <span>10月 02, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/静态博客的搭建/">静态博客的搭建</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
+        <p>前段时间一直说写个综合的博客来描述科学上网的过程，给自己做一个记录的同时，分享一些fun。因为没有动力，所以这篇博客一直没有面世，直到昨天…（手动微笑.jpg）<br><a id="more"></a><br>我觉得有必要介绍一下背景，之前在校园网上有过网络不稳定的时候，一开始出现ss不能正常使用的情况，个人以为是这方面的原因，切换到手机热点后，仍然发现问题没有解决，我可去你的吧，这才搭了几天。（づ￣3￣）づ╭❤～<br>奈何对“外面的世界”甚是向往，耐着性子重新搭了一个，想着也正好写个博客，如果后面还出现这种事情，也比较好快速的进行“操作”。</p>
+<h2 id="服务器端搭建"><a href="#服务器端搭建" class="headerlink" title="服务器端搭建"></a>服务器端搭建</h2><h3 id="基础建设"><a href="#基础建设" class="headerlink" title="基础建设"></a>基础建设</h3><h4 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 开放area的服务器（这里用的是DigitalOcean）</div><div class="line">2. 服务器上是Linux（该blog面向Ubuntu16.04）</div><div class="line">3. 服务器不欠费，hhh（忽略，ヽ(￣▽￣)ﾉ）</div></pre></td></tr></table></figure>
+<hr>
+<h4 id="服务器安装"><a href="#服务器安装" class="headerlink" title="服务器安装"></a>服务器安装</h4><ul>
+<li>更新软件源，<code>sudo apt-get update</code></li>
+<li>安装pip环境，<code>sudo apt-get install python-pip</code></li>
+<li>安装shadowsocks，<code>sudo pip install shadowsocks</code></li>
+</ul>
+<hr>
+<h4 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h4><h5 id="开启单个端口"><a href="#开启单个端口" class="headerlink" title="开启单个端口"></a>开启单个端口</h5><p><code>sudo ssserver -p 8388 -k yourpassword -m rc4-md5 -d start</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-p 开放的端口号</div><div class="line">-k 个人设置的密码</div><div class="line">-m 所用的加密协议</div></pre></td></tr></table></figure></p>
+<h5 id="开启多端口"><a href="#开启多端口" class="headerlink" title="开启多端口"></a>开启多端口</h5><ol>
+<li>进入etc文件夹，<code>cd /etc</code></li>
+<li>新建shadowsocks.json文件，<code>touch shadowsocks.json</code></li>
+<li>编辑shadowsocks.json文件，<code>vim shadowsocks.json</code></li>
+<li><p>添加如下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;: &quot;服务器ip&quot;,</div><div class="line">    &quot;server_port&quot;: &#123;</div><div class="line">        &quot;端口1&quot;: &quot;密码1&quot;,</div><div class="line">        &quot;端口2&quot;: &quot;密码2&quot;</div><div class="line">    &#125;,</div><div class="line">    &quot;timeout&quot;: 300,</div><div class="line">    &quot;method&quot;: &quot;rc4-md5&quot;,</div><div class="line">    &quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>赋予文件权限，<code>sudo chmod 755 /etc/shadowsocks.json</code></p>
+</li>
+<li>支持加密方式，<code>sudo apt-get install python-m2crypto</code></li>
+<li>运行配置文件，<code>sudo ssserver -c /etc/shadowsocks.json -d start</code></li>
+</ol>
+<h5 id="配置开机自启"><a href="#配置开机自启" class="headerlink" title="配置开机自启"></a>配置开机自启</h5><ol>
+<li>进入/etc/rc.local文件，<code>sudo vim rc.local</code></li>
+<li>在exit 0一行上面加入开机自启项，<code>/usr/local/bin/ssserver -c /etc/shadowsocks.json</code></li>
+<li>保存退出，之后重启服务器后该服务都会自行启动</li>
+</ol>
+<hr>
+<h3 id="进阶部分-BBR加速"><a href="#进阶部分-BBR加速" class="headerlink" title="进阶部分-BBR加速"></a>进阶部分-BBR加速</h3><h4 id="一键式安装"><a href="#一键式安装" class="headerlink" title="一键式安装"></a>一键式安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget –no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh</div><div class="line">chmod +x bbr.sh</div><div class="line">./bbr.sh</div></pre></td></tr></table></figure>
+<p>复制以上三条命令到xshell中，回车，遇到选择的时候，一路回车就可以，全部结束后需要重启服务器生效</p>
+<blockquote>
+<p>服务器端基础搭建部分大篇幅参考该篇博客<a href="https://linghucong.js.org/2016/04/20/setup-Shadowsocks-on-ubuntu-1604/index.html" target="_blank" rel="external">科学上网:ubuntu 16.04服务器上搭建Shadowsocks服务</a>，BBR加速部分参考该篇博客<a href="https://since1989.org/vultr/google-bbr-tcp-serverspeeder-ss.html" target="_blank" rel="external">linode vultr vps搭建ss开启锐速BBR加速教程</a>，特此声明</p>
+</blockquote>
+<hr>
+<h2 id="客户端连接"><a href="#客户端连接" class="headerlink" title="客户端连接"></a>客户端连接</h2><h3 id="工具获取"><a href="#工具获取" class="headerlink" title="工具获取"></a>工具获取</h3><ol>
+<li>官网获取客户端，<a href="https://shadowsocks.org/en/download/clients.html" target="_blank" rel="external">https://shadowsocks.org/en/download/clients.html</a></li>
+<li>百度盘自取，<a href="https://pan.baidu.com/s/1fdRwkNgd-n1qd1neG4sj9w" target="_blank" rel="external">NewVersion-4.0.9, 优化河蟹词 密码: aiva</a></li>
+</ol>
+<hr>
+<h3 id="解压运行"><a href="#解压运行" class="headerlink" title="解压运行"></a>解压运行</h3><p><img src="http://oei91bbtj.bkt.clouddn.com/DigitalOceanss1.png" alt=""><br>添加，填写服务器地址，端口号，以及密码，选择加密方式，确定！<br>自此，便可以使用</p>
+<hr>
+<h3 id="浏览器控制流量"><a href="#浏览器控制流量" class="headerlink" title="浏览器控制流量"></a>浏览器控制流量</h3><p>以Google Chrome为例，安装SwitchyOmega插件<br>插件来源可以百度，也可以<a href="">百度盘</a>自取<br>安装后，选择 情景模式 中的proxy，填写以下内容：<br><img src="http://oei91bbtj.bkt.clouddn.com/DigitalOceanss2.png" alt=""><br>之后选择[直接连接]便是断开，图表变灰；选择[proxy]便是连接，图表变蓝<br><img src="http://oei91bbtj.bkt.clouddn.com/DigitalOceanss3.png" alt=""></p>
+<p>以上.</p>
+<hr>
+<blockquote>
+<p>声明：该篇博客只作学习交流用，仅供个人资料查询，不用于个人盈利，第三方盈利与本博客无关</p>
+</blockquote>
 
     
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
-</script>
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/06/04/关闭445Port/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
