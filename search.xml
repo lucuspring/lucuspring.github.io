@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>关闭445Port</title>
+      <link href="/2018/06/04/%E5%85%B3%E9%97%AD445Port/"/>
+      <url>/2018/06/04/%E5%85%B3%E9%97%AD445Port/</url>
+      <content type="html"><![CDATA[<h4 id="今天早上一醒过来，发现空间已经被各种ONION勒索软件感染的情况，该软件的对象主要是连接校园网的Windows用户，他会对同学们的资料和数据造成严重损失，只有支付高额赎金才能解密恢复文件。"><a href="#今天早上一醒过来，发现空间已经被各种ONION勒索软件感染的情况，该软件的对象主要是连接校园网的Windows用户，他会对同学们的资料和数据造成严重损失，只有支付高额赎金才能解密恢复文件。" class="headerlink" title="今天早上一醒过来，发现空间已经被各种ONION勒索软件感染的情况，该软件的对象主要是连接校园网的Windows用户，他会对同学们的资料和数据造成严重损失，只有支付高额赎金才能解密恢复文件。"></a>今天早上一醒过来，发现空间已经被各种ONION勒索软件感染的情况，该软件的对象主要是连接校园网的Windows用户，他会对同学们的资料和数据造成严重损失，只有支付高额赎金才能解密恢复文件。</h4><a id="more"></a><p>其中一种解决办法是“关闭445端口”，接下来简要说明一下具体步骤：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">命令行输入&quot;regedit&quot;，打开注册表</div><div class="line">找到注册表项&quot;HKEY_LOCAL_MACHINE\System\Controlset\Services\NetBT\Parameters&quot;</div><div class="line">右键&quot;Parameters&quot;项，选择新建&quot;DWORD&quot;值，并命名为SMBDeviceEnabled</div><div class="line">右键修改值的数值数据为&quot;0&quot;，完成设置</div></pre></td></tr></table></figure></p><p>注：445端口同139端口一起为共享文件夹和共享打印机提供途径</p><blockquote><p>其实2017年5月13日就写了这篇blog，但是没有推出来，今天想起来就补充一下</p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> Tips </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tips </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Markdown基本语法</title>
       <link href="/2018/05/28/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
       <url>/2018/05/28/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
@@ -27,7 +48,7 @@
       <title>JQuery获取当前行的数据</title>
       <link href="/2018/05/28/JQuery%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%A1%8C%E7%9A%84%E6%95%B0%E6%8D%AE/"/>
       <url>/2018/05/28/JQuery%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%A1%8C%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
-      <content type="html"><![CDATA[]]></content>
+      <content type="html"><![CDATA[<p>To be Continue..</p>]]></content>
       
       <categories>
           
@@ -48,8 +69,14 @@
       <title>How to get github pack</title>
       <link href="/2018/05/27/How-to-get-github-pack/"/>
       <url>/2018/05/27/How-to-get-github-pack/</url>
-      <content type="html"><![CDATA[]]></content>
+      <content type="html"><![CDATA[<p>To be continue..</p>]]></content>
       
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
       
     </entry>
     
@@ -96,7 +123,7 @@
     </entry>
     
     <entry>
-      <title>Building</title>
+      <title>Hexo Building</title>
       <link href="/2016/10/04/Building/"/>
       <url>/2016/10/04/Building/</url>
       <content type="html"><![CDATA[<h1 id="In-class"><a href="#In-class" class="headerlink" title="In class"></a>In class</h1><h2 id="fail"><a href="#fail" class="headerlink" title="fail:"></a>fail:</h2><p>刚开始时，使用的Node.js是最新版的，然后配置了系统环境，执行命令：<code>npm install hexo -g</code> 时，加载了很长时间，然后并没有进行到下一步。<br><a id="more"></a></p><h2 id="improve"><a href="#improve" class="headerlink" title="improve:"></a>improve:</h2><p>换用Node.js的familiar版，成功解决了上述问题。<br>接着在任意文件夹中新建一个目录，cd命令到相应的文件夹，之后就开始启用命令行大法了。首先初始化，之后接着启动hexo server，如果在浏览器中访问<code>localhost:4000</code>（这个地址是可以调控的，如果电脑中安装了福昕阅读器，则这个端口会被堵塞）成功，则说明此时hexo配置成功。然后通过修改配置文件_config.的deploy属性来将本地hexo和远程Github关联。<br><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004165740.png" alt=""><br>在修改配置文件的时候，一定要注意空格（type、repository、branch前要加空格，冒号后面也要加一个空格）<br>接着安装hexo-deployer-git：<code>npm install hexo-deployer-git -S</code><br>课上就做到了这一步，下面请允许我盗一波图<br><img src="http://oei91bbtj.bkt.clouddn.com/Building2.png" alt=""><br><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004171646.png" alt=""></p><blockquote><p>版权所有@姜建林学长，感谢大力支持</p></blockquote><hr><h1 id="After-class"><a href="#After-class" class="headerlink" title="After class"></a>After class</h1><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>一开始接触hexo的GUI是landscape主题，除了丑之外一无是处，然后我就毅然决然的踏上了寻找好看主题的不归路。<br>首先是在知乎上搜索的，看到了一系列的<strong><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">比较好的主题</a></strong><br><img src="http://oei91bbtj.bkt.clouddn.com/Building4.png" alt=""></p><p>前十名的主题我都下载下来放在theme文件夹里面然后一个个的试，最后有三个入了法眼，一个非<strong><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">next</a></strong>莫属；另一个是<strong><a href="https://haojen.github.io/" target="_blank" rel="external">Haojen</a></strong> 的一个主题，以简洁和规则而凸显，特别是体现在首页；还有一个是<strong><a href="http://litten.github.io/" target="_blank" rel="external">Litten</a></strong>的博客,独有的特点是可以自主添加相册，其中标签的处理和页面利用做的比较好，还可以增加友链。<br>一开始我是采用Haojen的那个主题，然后出现了一些比较头疼的问题:</p><ol><li>一开始根目录的_config.文件要求与theme下的对应主题的_config.文件保持一致，然后更改的时候需要更改两个，操作的复杂度增加了</li><li>刷新起来特别麻烦，每次在<code>sublime text3</code>中修改完后，都必须ctrl+C取消后，然后再hexo s运行一遍才能看到更新之后的效果</li><li>当时添加图片方面做的还不是很好，放在本地的图片并不能很好的嵌入其中</li><li>在网上更新的各种插件并不是很多，然后论坛中谈论的频率并不是很大， 所以我觉得这对之后维护以及更新不是很有利，可塑性很小</li></ol><p>基于以上的四点原因，我决定放弃这个主题，虽然已经搭建了一天半的时间，但还是狠狠心给丢了。<br>同时我承认第二次是有用Litten的念头的，然后我在群邮件里面翻了一下，发现有蛮多的人用，觉得没有新意。所以转了一圈，又回归到了我强大的next主题，回归到了经典的Scheme–Muse（主要是紧凑型的Mist太多人用，而Pisces文章的可读性宽度太小，慵懒的我也不愿意去找对应的CSS样式进行更改）话虽如此，但是Muse的大片留白还是很充满想象空间的，有种中国水墨画的味道，而且可以降低阅读疲劳，其中的sidebar也很cute，所以最终就确定了为next主题</p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>最开始的时候，我是将图片统一存在主题下的images文件夹下，然后，我就琢磨，将文件夹上传至github的时候图片占了很大的空间，然后如果别人要参考下载的话也需要消耗下载图片的时间(命令行下载或上传的速度我就不过多描述了，用过的孩子都懂其中的痛)<br>就在我快要放弃，使用360云的时候，万能的知乎给了我答案，那就是七牛云，注册后就有1个G的免费空间，可以产生外链，将外链代替原本的本地地址可以有效地解决这个问题。（其中在设置七牛云的时候，不要调成Private，这样产生不了外链）<br>有一段时间，我沉迷于把单色调的background换成图片形式，但一直没有成功。今天翻看别人的博客的时候，发现了<strong><a href="https://1053061407.github.io/" target="_blank" rel="external">徐运放同学</a></strong>的博客已经换了背景图片，然后私下里交流了一下，发现用的方法是一样的，就是下图：<br><img src="http://oei91bbtj.bkt.clouddn.com/Building5.png" alt=""><br>解决方法，将其中的本地链接换成了网络外链，完美解决，然后高兴地太早了，出现了这种情况：<br><img src="http://oei91bbtj.bkt.clouddn.com/Building6.jpg" alt=""><br>背景图片随着页面滚动，不是固定的状态，然后找了一下CSS样式里面的background-position，调成fixed的状态，然后期待奇迹发生的我并没有看到什么改观。。<strong> 希望知道如何调节的小伙伴在下方的讨论区给我留言，thanks a lot</strong></p><h2 id="评论框"><a href="#评论框" class="headerlink" title="评论框"></a>评论框</h2><p>关于评论框，我是选择了<strong><a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></strong>这个神奇的平台，推荐还没有设立评论区的同学可以去尝试一下，只需要简单的几步就可以达到目的<br><img src="http://oei91bbtj.bkt.clouddn.com/Building7.png" alt=""></p><h2 id="音乐栏"><a href="#音乐栏" class="headerlink" title="音乐栏"></a>音乐栏</h2><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&id=756701&auto=1&height=66"></iframe><br>三板斧可以搞定：<br><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004231410.png" alt=""></p><h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><ul><li>如果首页几篇文章展开起来放，会显得特别乱，没有条理，加一个<code>&lt;!--more--&gt;</code>可以很好地解决这个问题</li><li>如果标签、关于、分类页面没有搭建起来的话，建议去除首页中相应的标签，以免看到很粗糙的部分</li><li>期间因为_config.混乱过一次，经历过一次重装，建议在改动之前做好相应备份</li><li>推荐几个网站：</li><li><ol><li><strong><a href="http://www.cnblogs.com/kysnail/archive/2012/03/16/2399589.html" target="_blank" rel="external">msysgit的基本操作</a></strong></li></ol></li><li><ol><li><strong><a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html?qq-pf-to=pcqq.group" target="_blank" rel="external">截图版安装hexo并部署到github</a></strong></li></ol></li><li><ol><li><strong><a href="http://www.jianshu.com/p/a2fe56d11c4f" target="_blank" rel="external">搭建hexo时遇到的坑</a></strong></li></ol></li><li><ol><li><strong><a href="http://www.jianshu.com/p/21d355525bdf" target="_blank" rel="external">MarkDown学习小结</a></strong></li></ol></li></ul><h1 id="To-the-future"><a href="#To-the-future" class="headerlink" title="To the future"></a>To the future</h1><ul><li>添加搜索框功能</li><li>添加打赏功能以及附带的一些操作</li><li>通透理解next主题，在接下来的网页知识后，自己修改CSS样式以及排版</li><li>将背景图片自然而不突兀的添加上去，并实现固定</li><li>将剩余的几个页面很好的搭建起来，并及时维护，添加一些好玩的插件</li></ul><hr><h5 id="我是华丽的分割线"><a href="#我是华丽的分割线" class="headerlink" title="我是华丽的分割线"></a>我是华丽的分割线</h5><ul><li>time：170501<br>今天碰到一些问题，想写一些博客，然后就把hexo重新扒出来了，然后发现有些东西已然忘记，经过一个下午的search行动，终于弄得差不多了，在最后，<code>hexo deploy</code>这一步，本应该无波无澜的，结果被自己坑到了，在重新更改配置文件的时候，把deploy属性的最后后缀改成了<code>github</code>，导致尝试用万金油方法终不得成效。<br>万金油方法如下：<br><code>npm install hexo-deployer-git -save</code>然后再进行<code>hexo deploy</code></li></ul>]]></content>
@@ -152,7 +179,7 @@
       
         <tags>
             
-            <tag> 心得 </tag>
+            <tag> Tips </tag>
             
         </tags>
       
