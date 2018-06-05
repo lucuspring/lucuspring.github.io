@@ -12,6 +12,8 @@
     
     <title>
         
+            分类: Web基础 | 
+        
         Lucuspring&#39;s Blogs
     </title>
 
@@ -65,7 +67,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://lucuspring.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Lucuspring&#39;s Blogs">
+    <meta property="og:title" content="分类: Web基础 | Lucuspring&#39;s Blogs">
     <meta property="og:image" content="/img/favicon1.png" />
     <meta property="og:description" content="天朗气清，惠风和畅">
     
@@ -73,7 +75,7 @@
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Lucuspring&#39;s Blogs">
+    <meta name="twitter:title" content="分类: Web基础 | Lucuspring&#39;s Blogs">
     <meta name="twitter:description" content="天朗气清，惠风和畅">
     <meta name="twitter:image" content="/img/favicon1.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -81,7 +83,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://lucuspring.github.io/404.html" />
+        <link rel="canonical" href="http://lucuspring.github.io/categories/Web基础/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -284,210 +286,94 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
 
+    <!-- Pin on top -->
+    
 
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+    <!-- Normal Post -->
     
         
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://oei91bbtj.bkt.clouddn.com/jquery.png">
+    
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2018/05/28/JQuery获取当前行的数据/">JQuery获取当前行的数据</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            需求来自XML作业中某一个小问题，进行update操作的时候，需要将表格中对应行的数据传输到对应更新表格的字段中
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2018/05/28/JQuery获取当前行的数据/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Chang Zhan's avatar">
+            </div>
+            <div>
+                <strong>Chang Zhan</strong>
+                <span>5月 28, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                <a class="post_category-link" href="/categories/Web基础/">Web基础</a>, <a class="post_category-link" href="/categories/Web基础/JQuery/">JQuery</a>
+            </span>
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
 </script>
 
-        
-    
-            <p class="article-headline-p">
-                
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>Chang Zhan</strong>
-        <span>5月 27, 2018</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">devices other</i>
-    <span class="visuallyhidden">devices other</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-    
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB6UlEQVR42u3aQZKCQAwFUO5/6fEAU+BPB1TIY2WhYp6LVJLO9veIa8PAwMDAwMDA+BnGFl9vHrrz+f/f3btTjQEDA2MaIwnx+Cf3wjpGrsWAgYExmXFu0qz+NeUYMDAwMGJGXkom9zEwMDD6jONH75WGyX0MDAyMs5rYtXY3KSs/2otjYGDckJEP5a97/dHzDQwMjFsxFhcdDpHJH5En8Qt3RjAwMG7CWGtWk3c7SxvRkA4DA2MMIz9cXGtT88OAKgYDA2Mmo9pYHpeJeSGYfBcDA2MyI281+wVifzCHgYExk9FvPvPPVEdyb9IxBgbGMEZn/XRxWBYn60ITi4GB8VBGEnp5DaKx8FpYe8XAwBjDuGLcn7fErd/CwMAYw8hXJargPI3mSR8DA2MmowpIkma/HIwaXQwMjDGMtRWuPOik+EtaXwwMjMmM6jFkHlaelE9btsDAwHgoI3lcdbW0eqiQL3ZgYGDMZFSvfP0rSdx5GVroxTEwMB7H6KxTdJrevGXFwMDAyFNk8m6/BCy0xxgYGCMZ1SPJ6tA/B5eXLTAwMDDikVweyhoVAwMDI0+4+RC/un5RWOPAwMAYyaiGkhd5+bgtb6ExMDCmMfLRWGeIlpePl59vYGBg3Ipx3wsDAwMDAwMD46vXC6D4NcqArG0KAAAAAElFTkSuQmCC">
-    
-</ul>
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-        
-            <!-- Busuanzi Views -->
-            <a class="post_share-link" href="#">
-                <li class="mdl-menu__item">
-                    <span id="busuanzi_container_page_pv">
-                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
-                    </span>
-                </li>
-            </a>
-        
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://lucuspring.github.io/404.html&pic=&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://lucuspring.github.io/404.html&via=Chang Zhan" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://lucuspring.github.io/404.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://lucuspring.github.io/404.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Lucuspring&#39;s Blogs&title=&summary=天朗气清，惠风和畅&pics=http://lucuspring.github.io/img/favicon1.png&url=http://lucuspring.github.io/404.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 QQ
-            </li>
-        </a>
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
-</div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <!DOCTYPE html>
-<html>
-<head>404NotFound
-<link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
-<body>
-<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://lucuspring.github.io" homepagename="Home"></script>
-</body>
-</html>
-    
-
     
 </div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-                
-            </div>
-
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-</nav>
-
-        </div>
-    </div>
-
 
 
                     
@@ -688,6 +574,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 

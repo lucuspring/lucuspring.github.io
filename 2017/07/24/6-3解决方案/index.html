@@ -297,7 +297,8 @@
 
     <!-- Custom Head -->
     
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -513,11 +514,45 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <h4 id="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！"><a href="#在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here-we-go！" class="headerlink" title="在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！"></a>在项目的第一阶段结束的时候，碰到一个font-awesome小图标在登录之前无法显示，但是在登录之后可以正常显示的小问题，在查阅资料后得以解决，之后考虑到这个项目要接着做下去，得找个地方写一些心得和体会，here we go！</h4><a id="more"></a>
-<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><h4 id="1-font-awesome被过滤掉的解决方案（20170724）"><a href="#1-font-awesome被过滤掉的解决方案（20170724）" class="headerlink" title="1. font-awesome被过滤掉的解决方案（20170724）"></a>1. font-awesome被过滤掉的解决方案（20170724）</h4><p>sol：在web.xml中添加下列信息即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;servlet-mapping&gt;</div><div class="line">    &lt;servlet-name&gt;default&lt;/servlet-name&gt;</div><div class="line">    &lt;url-pattern&gt;*.woff&lt;/url-pattern&gt;</div><div class="line">&lt;/servlet-mapping&gt;</div></pre></td></tr></table></figure></p>
-<p>and，restart server<br>原理：引用小图标时，需要加载一些字体信息</p>
-<h4 id="2-关于问卷调查中的”出生年月日”这一项，当”-form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮"><a href="#2-关于问卷调查中的”出生年月日”这一项，当”-form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮" class="headerlink" title="2. 关于问卷调查中的”出生年月日”这一项，当”#form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮"></a>2. 关于问卷调查中的”出生年月日”这一项，当”#form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮</h4><p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E5%B9%B4%E6%9C%88%E6%97%A5" alt=""><br>sol：在日期的语句后加上对于再次刷新时出生年月日的判断<br>原语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">(function($) &#123;</div><div class="line">        $(&quot;#dateBirth&quot;).datetimepicker(&#123;</div><div class="line">            // startView:最开始的视图0--小时视图,1--天视图,2--月视图,3--年视图,4--十年视图</div><div class="line">            format: &apos;yyyy-mm-dd&apos;,</div><div class="line">            language: &apos;zh-CN&apos;,</div><div class="line">            weekStart: 1, //周一为一周起点</div><div class="line">            autoclose: 1, //选择时间后自动关闭日历</div><div class="line">            startView: 4, //开始视图为十年视图</div><div class="line">            minView: 2,</div><div class="line">            forceParse: 0,</div><div class="line">            initialDate: new Date(2005,0,1)</div><div class="line">        &#125;);</div><div class="line">&#125;(jQuery));</div></pre></td></tr></table></figure></p>
-<p>修改后的语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">(function($) &#123;</div><div class="line">        $(&quot;#dateBirth&quot;).datetimepicker(&#123;</div><div class="line">            // startView:最开始的视图0--小时视图,1--天视图,2--月视图,3--年视图,4--十年视图</div><div class="line">            format: &apos;yyyy-mm-dd&apos;,</div><div class="line">            language: &apos;zh-CN&apos;,</div><div class="line">            weekStart: 1, //周一为一周起点</div><div class="line">            autoclose: 1, //选择时间后自动关闭日历</div><div class="line">            startView: 4, //开始视图为十年视图</div><div class="line">            minView: 2,</div><div class="line">            forceParse: 0,</div><div class="line">            initialDate: new Date(2005,0,1)</div><div class="line">        &#125;).on(&apos;hide&apos;,function(e) &#123;</div><div class="line">            $(&apos;#form1&apos;).data(&apos;bootstrapValidator&apos;)</div><div class="line">                .updateStatus(&apos;dateBirth&apos;, &apos;NOT_VALIDATED&apos;,null)</div><div class="line">                .validateField(&apos;dateBirth&apos;);</div><div class="line">        &#125;);</div><div class="line">&#125;(jQuery));</div></pre></td></tr></table></figure></p>
-<h2 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h2><h4 id="1-6-3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）"><a href="#1-6-3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）" class="headerlink" title="1. 6+3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）"></a>1. 6+3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）</h4><p>sol：经过多次人工测试，当对科目有特别强烈的兴趣的时候，可能Holland和MBTI所对应的表中无推荐的专业的交集，出现推荐的科目是给出所填写的基本信息中的成绩最好的三门。</p>
+<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><h4 id="1-font-awesome被过滤掉的解决方案（20170724）"><a href="#1-font-awesome被过滤掉的解决方案（20170724）" class="headerlink" title="1. font-awesome被过滤掉的解决方案（20170724）"></a>1. font-awesome被过滤掉的解决方案（20170724）</h4><p>sol：在web.xml中添加下列信息即可</p>
+<pre><code>&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;default&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;*.woff&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+</code></pre><p>and，restart server<br>原理：引用小图标时，需要加载一些字体信息</p>
+<h4 id="2-关于问卷调查中的”出生年月日”这一项，当”-form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮"><a href="#2-关于问卷调查中的”出生年月日”这一项，当”-form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮" class="headerlink" title="2. 关于问卷调查中的”出生年月日”这一项，当”#form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮"></a>2. 关于问卷调查中的”出生年月日”这一项，当”#form1”表中所有值为空时提交，经过错误判断后，再回填”出生年月日”，在日期插件中所选择的日期填入后无法显示正确的按钮</h4><p><img src="http://oei91bbtj.bkt.clouddn.com/Lab5_6+3%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E5%B9%B4%E6%9C%88%E6%97%A5" alt=""><br>sol：在日期的语句后加上对于再次刷新时出生年月日的判断<br>原语句：</p>
+<pre><code>(function($) {
+        $(&quot;#dateBirth&quot;).datetimepicker({
+            // startView:最开始的视图0--小时视图,1--天视图,2--月视图,3--年视图,4--十年视图
+            format: &#39;yyyy-mm-dd&#39;,
+            language: &#39;zh-CN&#39;,
+            weekStart: 1, //周一为一周起点
+            autoclose: 1, //选择时间后自动关闭日历
+            startView: 4, //开始视图为十年视图
+            minView: 2,
+            forceParse: 0,
+            initialDate: new Date(2005,0,1)
+        });
+}(jQuery));
+</code></pre><p>修改后的语句：</p>
+<pre><code>(function($) {
+        $(&quot;#dateBirth&quot;).datetimepicker({
+            // startView:最开始的视图0--小时视图,1--天视图,2--月视图,3--年视图,4--十年视图
+            format: &#39;yyyy-mm-dd&#39;,
+            language: &#39;zh-CN&#39;,
+            weekStart: 1, //周一为一周起点
+            autoclose: 1, //选择时间后自动关闭日历
+            startView: 4, //开始视图为十年视图
+            minView: 2,
+            forceParse: 0,
+            initialDate: new Date(2005,0,1)
+        }).on(&#39;hide&#39;,function(e) {
+            $(&#39;#form1&#39;).data(&#39;bootstrapValidator&#39;)
+                .updateStatus(&#39;dateBirth&#39;, &#39;NOT_VALIDATED&#39;,null)
+                .validateField(&#39;dateBirth&#39;);
+        });
+}(jQuery));
+</code></pre><h2 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h2><h4 id="1-6-3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）"><a href="#1-6-3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）" class="headerlink" title="1. 6+3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）"></a>1. 6+3项目，所推荐的专业和不推荐的项目都不存在，但是出现推荐的科目，如何解释？（20170726）</h4><p>sol：经过多次人工测试，当对科目有特别强烈的兴趣的时候，可能Holland和MBTI所对应的表中无推荐的专业的交集，出现推荐的科目是给出所填写的基本信息中的成绩最好的三门。</p>
 <h4 id="2-高考项目中出现新用户无法测试Holland（20170726）"><a href="#2-高考项目中出现新用户无法测试Holland（20170726）" class="headerlink" title="2. 高考项目中出现新用户无法测试Holland（20170726）"></a>2. 高考项目中出现新用户无法测试Holland（20170726）</h4><p>sol：在ResultSearchServiceImpl实例中的getScoreResultByUserId函数中添加非空判断</p>
 <h4 id="3-本地用-bat程序可正常运行，前端和逻辑部分已布置上ECS可通过www-whsyjy-cn正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题-20170730"><a href="#3-本地用-bat程序可正常运行，前端和逻辑部分已布置上ECS可通过www-whsyjy-cn正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题-20170730" class="headerlink" title="3. 本地用.bat程序可正常运行，前端和逻辑部分已布置上ECS可通过www.whsyjy.cn正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题(20170730)"></a>3. 本地用.bat程序可正常运行，前端和逻辑部分已布置上ECS可通过<a href="http://www.whsyjy.cn" target="_blank" rel="external"><code>www.whsyjy.cn</code></a>正常访问，数据库基础布置已经完成，但需要解决的问题是数据库数据从本地传输到云端以及云端数据库的连接问题(20170730)</h4><p>sol：此解决方案只限于解决当前问题用</p>
 <ol>
@@ -526,8 +561,15 @@
 </a></li>
 </ol>
 <p>sol：远程连接后，可通过Navicat进行数据传输，然后配置有关数据表的触发器和序列（若触发器没有配置，则会导致数据无法写入数据表，若序列没有配置，则会导致触发器运行时报错）</p>
-<h4 id="4-centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet-1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）"><a href="#4-centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet-1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）" class="headerlink" title="4. centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet 1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）"></a>4. centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet 1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）</h4><p>sol：将实例名和数据库用户名两个概念混淆，用实例名登录数据库当然不能远程连接上。然后用以下命令创建空间，创建用户，将空间和用户相匹配，然后给用户赋予一定的权限。具体代码实现如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1. 创建表空间</div><div class="line">create tablespace bocodbdbs logging datafile &apos;/data/oracle/oradata/orcl/zzkj_tpspace01.dbf&apos; size 1024m autoextend on next 32m maxsize unlimited extent management local;</div><div class="line">2. 创建用户，并将表空间和用户配对</div><div class="line">create user &apos;username&apos; identified by &apos;password&apos; default tablespace &apos;tablespace&apos;;</div><div class="line">3. 赋给用户最高权限</div><div class="line">grant connect,resource,dba to &apos;username&apos;;</div><div class="line">grant all privileges to &apos;username&apos;;</div></pre></td></tr></table></figure></p>
-<blockquote>
+<h4 id="4-centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet-1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）"><a href="#4-centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet-1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）" class="headerlink" title="4. centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet 1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）"></a>4. centOS7上布置oracle数据库，入端口和出端口已被放行，防火墙已被关闭，对1521端口已监听，telnet 1521是通行的，但是本地可以导通，用Navicat不能连接。（20170802）</h4><p>sol：将实例名和数据库用户名两个概念混淆，用实例名登录数据库当然不能远程连接上。然后用以下命令创建空间，创建用户，将空间和用户相匹配，然后给用户赋予一定的权限。具体代码实现如下：</p>
+<pre><code>1. 创建表空间
+create tablespace bocodbdbs logging datafile &#39;/data/oracle/oradata/orcl/zzkj_tpspace01.dbf&#39; size 1024m autoextend on next 32m maxsize unlimited extent management local;
+2. 创建用户，并将表空间和用户配对
+create user &#39;username&#39; identified by &#39;password&#39; default tablespace &#39;tablespace&#39;;
+3. 赋给用户最高权限
+grant connect,resource,dba to &#39;username&#39;;
+grant all privileges to &#39;username&#39;;
+</code></pre><blockquote>
 <p>可参考 <a href="http://blog.csdn.net/bocodb/article/details/2799351" target="_blank" rel="external">http://blog.csdn.net/bocodb/article/details/2799351</a></p>
 </blockquote>
 <h4 id="5-基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。"><a href="#5-基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。" class="headerlink" title="5. 基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。"></a>5. 基本情况如4中所示，但是telnet测试1521端口不是通行的，ORZ。。</h4><p>sol：ok，先检查监听情况和防火墙设置，没毛病，然后按照4的步骤重新建一个数据库，并没有什么用，然后将这个问题通过工单的形式呈递给了阿里运维工程师，发现是iptables防火墙的问题，解决办法可参考下面链接</p>
@@ -704,7 +746,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JQuery-Web基础/">JQuery Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/">Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/JQuery/">JQuery<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         

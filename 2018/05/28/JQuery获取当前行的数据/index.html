@@ -37,8 +37,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Chang Zhan">
-    <meta name="description" itemprop="description" content="天朗气清，惠风和畅">
-    <meta name="keywords" content="lucuspring 天朗气清,JQuery Web基础">
+    <meta name="description" itemprop="description" content="需求来自XML作业中某一个小问题，进行update操作的时候，需要将表格中对应行的数据传输到对应更新表格的字段中">
+    <meta name="keywords" content="lucuspring 天朗气清,JQuery,Web基础">
 
     <!-- Site Verification -->
     
@@ -69,17 +69,17 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="JQuery获取当前行的数据 | Lucuspring&#39;s Blogs">
     <meta property="og:image" content="/img/favicon1.png" />
-    <meta property="og:description" content="天朗气清，惠风和畅">
-    <meta property="og:article:tag" content="JQuery Web基础"> 
+    <meta property="og:description" content="需求来自XML作业中某一个小问题，进行update操作的时候，需要将表格中对应行的数据传输到对应更新表格的字段中">
+    <meta property="og:article:tag" content="JQuery"> <meta property="og:article:tag" content="Web基础"> 
 
     
         <meta property="article:published_time" content="5月 28, 2018" />
-        <meta property="article:modified_time" content="6月 04, 2018" />
+        <meta property="article:modified_time" content="6月 05, 2018" />
     
 
     <!-- The Twitter Card protocol -->
     <meta name="twitter:title" content="JQuery获取当前行的数据 | Lucuspring&#39;s Blogs">
-    <meta name="twitter:description" content="天朗气清，惠风和畅">
+    <meta name="twitter:description" content="需求来自XML作业中某一个小问题，进行update操作的时候，需要将表格中对应行的数据传输到对应更新表格的字段中">
     <meta name="twitter:image" content="/img/favicon1.png">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="http://lucuspring.github.io" />
@@ -115,8 +115,8 @@
     "headline": "JQuery获取当前行的数据",
     "url": "http://lucuspring.github.io/2018/05/28/JQuery获取当前行的数据/index.html",
     "datePublished": "5月 28, 2018",
-    "dateModified": "6月 04, 2018",
-    "description": "天朗气清，惠风和畅",
+    "dateModified": "6月 05, 2018",
+    "description": "需求来自XML作业中某一个小问题，进行update操作的时候，需要将表格中对应行的数据传输到对应更新表格的字段中",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://lucuspring.github.io"
@@ -297,7 +297,8 @@
 
     <!-- Custom Head -->
     
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -345,7 +346,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#"><span class="post-toc-number">1.</span> <span class="post-toc-text"></span></a></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -428,7 +429,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/JQuery-Web基础/">JQuery Web基础</a>
+        <a class="post_tag-link" href="/tags/JQuery/">JQuery</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Web基础/">Web基础</a>
     </ul>
     
 
@@ -512,7 +513,72 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>To be Continue..</p>
+        <p>需求来自XML作业中某一个小问题，进行update操作的时候，需要将表格中对应行的数据传输到对应更新表格的字段中<br><a id="more"></a><br>以该页面为例<br><img src="http://oei91bbtj.bkt.clouddn.com/JQuery1.png" alt=""><br>当点击第一行右边的编辑按钮时，需要将各字段放入以下的框体中</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://oei91bbtj.bkt.clouddn.com/JQuery2.png" alt=""></h2><p>在此之前介绍一下该表格的形成</p>
+<pre><code>&lt;script language=&quot;javaScript&quot; for=&quot;window&quot; event=&quot;onload&quot;&gt;  
+            // 此处xmlStr可从数据库中读取直接生成的xml字符串  
+        var xmlStr = &quot;&lt;ArrayList&gt;&lt;item&gt;&lt;id&gt;1&lt;/id&gt;&lt;name&gt;挪威的森林&lt;/name&gt;&lt;author&gt;村上春树&lt;/author&gt;&lt;price&gt;30&lt;/price&gt;&lt;borrowedNumber&gt;1&lt;/borrowedNumber&gt;&lt;totalNumber&gt;5&lt;/totalNumber&gt;&lt;press&gt;上海译文出版社&lt;/press&gt;&lt;publishDate&gt;1279791117000&lt;/publishDate&gt;&lt;type&gt;1&lt;/type&gt;&lt;/item&gt;&lt;item&gt;&lt;id&gt;2&lt;/id&gt;&lt;name&gt;计算机组织与结构&lt;/name&gt;&lt;author&gt;詹昶&lt;/author&gt;&lt;price&gt;100&lt;/price&gt;&lt;borrowedNumber&gt;0&lt;/borrowedNumber&gt;&lt;totalNumber&gt;6&lt;/totalNumber&gt;&lt;press&gt;电子工业出版社&lt;/press&gt;&lt;publishDate&gt;1512466323000&lt;/publishDate&gt;&lt;type&gt;1&lt;/type&gt;&lt;/item&gt;&lt;/ArrayList&gt;&quot;;  
+
+        try //Internet Explorer  
+        {  
+            xmlDoc=new ActiveXObject(&quot;Microsoft.XMLDOM&quot;);  
+            xmlDoc.async=&quot;false&quot;;  
+            xmlDoc.loadXML(xmlStr);  
+        }  
+        catch(e)  
+        {  
+            try //Firefox, Mozilla, Opera, etc.  
+              {  
+              parser=new DOMParser();  
+              xmlDoc=parser.parseFromString(xmlStr,&quot;text/xml&quot;);  
+              }  
+            catch(e) {alert(e.message)}  
+        }  
+
+        //window.onlad使用参考 https://blog.csdn.net/u011413922/article/details/70048691  
+        var xmlNode = xmlDoc.getElementsByTagName(&#39;item&#39;);  
+        window.onload = function(){  
+            var vehicle_data = document.getElementById(&quot;basketball_info&quot;);  
+            var datas = &quot;&quot;;  
+            for (var i = 0; i &lt; xmlNode.length; i++) {  
+                datas += &quot;&lt;tr&gt;&quot;;  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;id&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;name&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;author&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;price&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;borrowedNumber&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;totalNumber&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;press&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+                // Start 日期格式转换  
+                var publishDate = xmlDoc.getElementsByTagName(&quot;publishDate&quot;)[i].childNodes[0].nodeValue;  
+                var Timestamp = new Date(parseInt(publishDate)).toLocaleString().replace(/:\d{1,2}$/,&#39; &#39;);  
+                datas += &quot;&lt;td&gt;&quot; + Timestamp +&quot;&lt;/td&gt;&quot;;  
+                // End 日期格式转换  
+                datas += &quot;&lt;td&gt;&quot; + xmlDoc.getElementsByTagName(&quot;type&quot;)[i].childNodes[0].nodeValue +&quot;&lt;/td&gt;&quot;;  
+
+                // Start update button  
+                datas += &quot;&lt;td&gt;&quot; + &#39; &lt;button class=&quot;update-delete-hover&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal1&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/i&gt;&lt;/button&gt; &#39; +&quot;&lt;/td&gt;&quot;;  
+                // End update button  
+
+                // Start delete button  
+                // 留出action接口  
+                datas += &quot;&lt;td&gt;&quot; + &#39; &lt;button id=&quot;update_vehicle_button&quot; class=&quot;update-delete-hover&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-trash&quot; action=&quot;&quot;&gt;&lt;/i&gt;&lt;/button&gt; &#39; +&quot;&lt;/td&gt;&quot;;  
+                // End delete button  
+                datas += &quot;&lt;/tr&gt;&quot;;  
+            }  
+            vehicle_data.innerHTML = datas;  
+        }  
+        &lt;/script&gt;
+</code></pre><p><img src="http://oei91bbtj.bkt.clouddn.com/JQuery4.png" alt=""><br>先从xmlstr处（可从后台传输一个xmlstr变量）取得xml树，通过DOM解析，并按照表格的形式存入，就形成了现在的表格<br>如果需要从表格中取数据就需要用到JQuery了</p>
+<ol>
+<li>在按钮处添加一个<code>onclick=&quot;update_action(this)&quot;</code>函数触发器</li>
+<li>实现update_action(object)函数<br><img src="http://oei91bbtj.bkt.clouddn.com/JQuery3.png" alt=""></li>
+<li>对于上图，首先寻找$(object)到标签<code>tr</code>的父节点</li>
+<li>遍历该父节点下名称为<code>td</code>的子节点</li>
+<li>用eq()限定选择哪个子节点，.html()用来取值</li>
+</ol>
+<p>以上</p>
+<hr>
 
     
 
@@ -658,7 +724,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JQuery-Web基础/">JQuery Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/">Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/JQuery/">JQuery<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         

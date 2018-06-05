@@ -297,7 +297,8 @@
 
     <!-- Custom Head -->
     
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -514,23 +515,49 @@
     
         <p>有一段时间没有写博客了（大概有大半年了，摔~），然鹅今天到了提笔忘字的地步，遂此篇博客为之记。<br><a id="more"></a></p>
 <h2 id="0X00-框架的确定"><a href="#0X00-框架的确定" class="headerlink" title="0X00 框架的确定"></a>0X00 框架的确定</h2><p>框架的划分基本上是以标题的<code>级数</code>来划分的，这里的<code>级数</code>有两种规则：</p>
-<h3 id="标记"><a href="#标记" class="headerlink" title="#标记"></a>#标记</h3><p>从一级标题到六级标题分别为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#      一级标题</div><div class="line">##     二级标题</div><div class="line">###    三级标题</div><div class="line">####   四级标题</div><div class="line">#####  五级标题</div><div class="line">###### 六级标题</div></pre></td></tr></table></figure></p>
-<h3 id="或-标记"><a href="#或-标记" class="headerlink" title="=或-标记"></a>=或-标记</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">一级</div><div class="line">=====</div><div class="line">二级</div><div class="line">------</div></pre></td></tr></table></figure>
-<h3 id="字体处理"><a href="#字体处理" class="headerlink" title="字体处理"></a>字体处理</h3><ol>
+<h3 id="标记"><a href="#标记" class="headerlink" title="#标记"></a>#标记</h3><p>从一级标题到六级标题分别为</p>
+<pre><code>#      一级标题
+##     二级标题
+###    三级标题
+####   四级标题
+#####  五级标题
+###### 六级标题
+</code></pre><h3 id="或-标记"><a href="#或-标记" class="headerlink" title="=或-标记"></a>=或-标记</h3><pre><code>一级
+=====
+二级
+------
+</code></pre><h3 id="字体处理"><a href="#字体处理" class="headerlink" title="字体处理"></a>字体处理</h3><ol>
 <li>加粗 <code>** 粗体 **</code></li>
 <li>斜体 <code>* 斜体 *</code></li>
 <li>斜体加粗 <code>*** 斜体加粗 ***</code></li>
 <li>删除线 <code>~~ 删除文本 ~~</code></li>
 </ol>
-<h3 id="字体颜色，字号，Font-family，底色等"><a href="#字体颜色，字号，Font-family，底色等" class="headerlink" title="字体颜色，字号，Font family，底色等"></a>字体颜色，字号，Font family，底色等</h3><p>这些可以通过内嵌HTML做到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;</div><div class="line">&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;</div><div class="line">&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;</div><div class="line">&lt;font color=#0099ff size=3 face=&quot;黑体&quot;&gt;color=#0099ff size=3 face=&quot;黑体&quot;&lt;/font&gt;</div><div class="line">&lt;font color=#00ffff size=4&gt;color=#00ffff size=4&lt;/font&gt;</div><div class="line">&lt;font color=gray size=5&gt;color=gray size=5&lt;/font&gt;</div><div class="line"></div><div class="line">$\color&#123;silver&#125;&#123;字体示例&#125;$</div><div class="line"></div><div class="line">&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=PowderBlue&gt;这里的背景色是：PowderBlue，  十六进制颜色值： #B0E0E6，rgb(176, 224, 230)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</div></pre></td></tr></table></figure></p>
-<blockquote>
+<h3 id="字体颜色，字号，Font-family，底色等"><a href="#字体颜色，字号，Font-family，底色等" class="headerlink" title="字体颜色，字号，Font family，底色等"></a>字体颜色，字号，Font family，底色等</h3><p>这些可以通过内嵌HTML做到</p>
+<pre><code>&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;
+&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;
+&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;
+&lt;font color=#0099ff size=3 face=&quot;黑体&quot;&gt;color=#0099ff size=3 face=&quot;黑体&quot;&lt;/font&gt;
+&lt;font color=#00ffff size=4&gt;color=#00ffff size=4&lt;/font&gt;
+&lt;font color=gray size=5&gt;color=gray size=5&lt;/font&gt;
+
+$\color{silver}{字体示例}$
+
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=PowderBlue&gt;这里的背景色是：PowderBlue，  十六进制颜色值： #B0E0E6，rgb(176, 224, 230)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</code></pre><blockquote>
 <p>此段引用CSND：<a href="https://blog.csdn.net/thither_shore/article/details/52181464" target="_blank" rel="external">https://blog.csdn.net/thither_shore/article/details/52181464</a></p>
 </blockquote>
 <h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>可用 <code>---</code> 标在每一段最后或者下一段开头</p>
 <hr>
-<h2 id="0X01排序"><a href="#0X01排序" class="headerlink" title="0X01排序"></a>0X01排序</h2><h3 id="有序排序"><a href="#有序排序" class="headerlink" title="有序排序"></a>有序排序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 第一句</div><div class="line">2. 第二句</div><div class="line">3. 第三句</div></pre></td></tr></table></figure>
-<h3 id="无序排序，可以选择-、-、-等"><a href="#无序排序，可以选择-、-、-等" class="headerlink" title="无序排序，可以选择+、 -、 * 等"></a>无序排序，可以选择<code>+、 -、 * 等</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">+ 第一句</div><div class="line">+ 第二句</div><div class="line">- 第三句</div><div class="line">- 第四句</div><div class="line">* almost final</div><div class="line">* final</div></pre></td></tr></table></figure>
-<hr>
+<h2 id="0X01排序"><a href="#0X01排序" class="headerlink" title="0X01排序"></a>0X01排序</h2><h3 id="有序排序"><a href="#有序排序" class="headerlink" title="有序排序"></a>有序排序</h3><pre><code>1. 第一句
+2. 第二句
+3. 第三句
+</code></pre><h3 id="无序排序，可以选择-、-、-等"><a href="#无序排序，可以选择-、-、-等" class="headerlink" title="无序排序，可以选择+、 -、 * 等"></a>无序排序，可以选择<code>+、 -、 * 等</code></h3><pre><code>+ 第一句
++ 第二句
+- 第三句
+- 第四句
+* almost final
+* final
+</code></pre><hr>
 <h2 id="0X02引用"><a href="#0X02引用" class="headerlink" title="0X02引用"></a>0X02引用</h2><blockquote>
 <p>这是一段引用<br>    这是引用的代码块<br>    public static void main(String[] args){<br>        System.out.println(“hello world”);<br>    }</p>
 </blockquote>
@@ -542,8 +569,14 @@
 <li>自动链接<code>&lt;http://baidu.com&gt;</code></li>
 </ol>
 <hr>
-<h2 id="0X04表格"><a href="#0X04表格" class="headerlink" title="0X04表格"></a>0X04表格</h2><p>表格对齐格式<br>标题|标题|标题|<br>| - | :-: | -:|<br>| 居左测试文本 | 居中测试文本 | 居右测试文本 |<br>|居左测试文本1|居中测试文本2|居右测试文本3|<br>|居左测试文本11|居中测试文本22|居右测试文本33|<br>|居左测试文本111|居中测试文本222|居右测试文本333|<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">|标题|标题|标题|</div><div class="line">|:---|:---:|---:|</div><div class="line">|居左测试文本|居中测试文本|居右测试文本|</div><div class="line">|居左测试文本1|居中测试文本2|居右测试文本3|</div><div class="line">|居左测试文本11|居中测试文本22|居右测试文本33|</div><div class="line">|居左测试文本111|居中测试文本222|居右测试文本333|</div></pre></td></tr></table></figure></p>
-<h2 id="0X05补充"><a href="#0X05补充" class="headerlink" title="0X05补充"></a>0X05补充</h2><blockquote>
+<h2 id="0X04表格"><a href="#0X04表格" class="headerlink" title="0X04表格"></a>0X04表格</h2><p>表格对齐格式<br>标题|标题|标题|<br>| - | :-: | -:|<br>| 居左测试文本 | 居中测试文本 | 居右测试文本 |<br>|居左测试文本1|居中测试文本2|居右测试文本3|<br>|居左测试文本11|居中测试文本22|居右测试文本33|<br>|居左测试文本111|居中测试文本222|居右测试文本333|</p>
+<pre><code>|标题|标题|标题|
+|:---|:---:|---:|
+|居左测试文本|居中测试文本|居右测试文本|
+|居左测试文本1|居中测试文本2|居右测试文本3|
+|居左测试文本11|居中测试文本22|居右测试文本33|
+|居左测试文本111|居中测试文本222|居右测试文本333|
+</code></pre><h2 id="0X05补充"><a href="#0X05补充" class="headerlink" title="0X05补充"></a>0X05补充</h2><blockquote>
 <p><a href="https://www.jianshu.com/p/82e730892d42" target="_blank" rel="external">https://www.jianshu.com/p/82e730892d42</a></p>
 </blockquote>
 
@@ -691,7 +724,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JQuery-Web基础/">JQuery Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/">Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/JQuery/">JQuery<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         

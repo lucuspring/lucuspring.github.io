@@ -297,7 +297,8 @@
 
     <!-- Custom Head -->
     
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -518,10 +519,22 @@
 <h1 id="创建一个工程"><a href="#创建一个工程" class="headerlink" title="创建一个工程"></a>创建一个工程</h1><p><img src="http://oei91bbtj.bkt.clouddn.com/AboutGithub2.png" alt=""></p>
 <hr>
 <h1 id="博客建立中。。"><a href="#博客建立中。。" class="headerlink" title="博客建立中。。"></a>博客建立中。。</h1><h2 id="loading…"><a href="#loading…" class="headerlink" title="loading…"></a>loading…</h2><hr>
-<h1 id="配置git全局变量"><a href="#配置git全局变量" class="headerlink" title="配置git全局变量"></a>配置git全局变量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;yourname&quot; //匹配姓名</div><div class="line">git config --global user.email &quot;youremail&quot; //匹配邮箱</div><div class="line">//之后可以通过这样的命令来查看自己输入的信息</div><div class="line">git config --global user.name</div><div class="line">git config --global user.email</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C youremail@example.com</div><div class="line">cd ~/.ssh</div><div class="line">vim id_rsa.pub</div><div class="line">//输入完成后会出现一串字符，copy下来（不能漏掉最后的一部分），添加到github里面的SSH Keys里面，会出现以下的图片</div><div class="line">//生成成功后可以由下个命令验证</div><div class="line">ssh git@github.com</div></pre></td></tr></table></figure>
-<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004164201.png" alt=""></h2><h1 id="博客建立后，使用命令行将本地的文件推到github上"><a href="#博客建立后，使用命令行将本地的文件推到github上" class="headerlink" title="博客建立后，使用命令行将本地的文件推到github上"></a>博客建立后，使用命令行将本地的文件推到github上</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add -A //将本地所有文档推至缓存区</div><div class="line">git commit -m&quot;XXX&quot;//提交，加上描述</div><div class="line">git remote add origin git@github.com:lucuspring/lucuspring.github.io.git //将本地和云端连接起来</div><div class="line">git push -u origin master//将本地文档推送至云端</div></pre></td></tr></table></figure>
-<hr>
+<h1 id="配置git全局变量"><a href="#配置git全局变量" class="headerlink" title="配置git全局变量"></a>配置git全局变量</h1><pre><code>git config --global user.name &quot;yourname&quot; //匹配姓名
+git config --global user.email &quot;youremail&quot; //匹配邮箱
+//之后可以通过这样的命令来查看自己输入的信息
+git config --global user.name
+git config --global user.email
+</code></pre><pre><code>ssh-keygen -t rsa -C youremail@example.com
+cd ~/.ssh
+vim id_rsa.pub
+//输入完成后会出现一串字符，copy下来（不能漏掉最后的一部分），添加到github里面的SSH Keys里面，会出现以下的图片
+//生成成功后可以由下个命令验证
+ssh git@github.com
+</code></pre><h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://oei91bbtj.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20161004164201.png" alt=""></h2><h1 id="博客建立后，使用命令行将本地的文件推到github上"><a href="#博客建立后，使用命令行将本地的文件推到github上" class="headerlink" title="博客建立后，使用命令行将本地的文件推到github上"></a>博客建立后，使用命令行将本地的文件推到github上</h1><pre><code>   git add -A //将本地所有文档推至缓存区
+   git commit -m&quot;XXX&quot;//提交，加上描述
+   git remote add origin git@github.com:lucuspring/lucuspring.github.io.git //将本地和云端连接起来
+   git push -u origin master//将本地文档推送至云端
+</code></pre><hr>
 <h1 id="之后就可以通过链接https-lucuspring-github-io来访问网页了"><a href="#之后就可以通过链接https-lucuspring-github-io来访问网页了" class="headerlink" title="之后就可以通过链接https://lucuspring.github.io来访问网页了"></a>之后就可以通过链接<a href="https://lucuspring.github.io">https://lucuspring.github.io</a>来访问网页了</h1>
     
 
@@ -667,7 +680,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JQuery-Web基础/">JQuery Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/categories/Intellij-IDEA/">Intellij IDEA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tips/">Tips<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/">Web基础<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Web基础/JQuery/">JQuery<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/javaWeb/">javaWeb<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/规范文档/">规范文档<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/静态博客的搭建/">静态博客的搭建<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         
