@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>拥有一个DigitalOcean服务器</title>
+      <link href="/2018/08/05/%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AADigitalOcean%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <url>/2018/08/05/%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AADigitalOcean%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+      <content type="html"><![CDATA[<p>书接上文“Digital-Ocean上科学上网”，第一个充分条件是“拥有一个科学的服务器”，本篇从①注册账户，②开通服务两个部分介绍。<br><a id="more"></a></p><h2 id="0x00-注册账户"><a href="#0x00-注册账户" class="headerlink" title="0x00 注册账户"></a>0x00 注册账户</h2><h3 id="创建一个PayPal账户"><a href="#创建一个PayPal账户" class="headerlink" title="创建一个PayPal账户"></a>创建一个PayPal账户</h3><p>1.访问到PayPal主页</p><p><img src="http://oei91bbtj.bkt.clouddn.com/1paypal-index.png" alt=""></p><p>2.注册一个人账户</p><p><img src="http://oei91bbtj.bkt.clouddn.com/2paypal-register.png" alt=""></p><p>3.填写具体用户信息</p><p><img src="http://oei91bbtj.bkt.clouddn.com/3paypal-register2.png" alt=""></p><p>4.登录账户</p><p><img src="http://oei91bbtj.bkt.clouddn.com/4paypal-login.png" alt=""></p><p>5.绑定银行卡</p><p><img src="http://oei91bbtj.bkt.clouddn.com/5paypal-card.png" alt=""></p><p>6.选择信用卡或者借记卡</p><p><img src="http://oei91bbtj.bkt.clouddn.com/6paypal-card.png" alt=""></p><h3 id="初始资金激活"><a href="#初始资金激活" class="headerlink" title="初始资金激活"></a>初始资金激活</h3><p>1.访问DigitalOcean登录界面</p><p><img src="http://oei91bbtj.bkt.clouddn.com/7digitalOcean-login.png" alt=""></p><p>2.选择PayPal方式激活账户，需要预支5刀</p><p><img src="http://oei91bbtj.bkt.clouddn.com/8digitalOcean-billing.png" alt=""></p><p>3.跳转到PayPal的付款界面</p><p><img src="http://oei91bbtj.bkt.clouddn.com/9-do-paypal.png" alt=""></p><p>4.验证绑定邮箱验证码</p><p><img src="http://oei91bbtj.bkt.clouddn.com/8digitalOcean-verify.png" alt=""></p><h2 id="0x01-开通服务"><a href="#0x01-开通服务" class="headerlink" title="0x01 开通服务"></a>0x01 开通服务</h2><p>1.可以查看个人账户，这里多出的50刀是Github Education返现的，详情参考“How to get github pack”篇</p><p><img src="http://oei91bbtj.bkt.clouddn.com/11-55$-ok.png" alt=""></p><p>2.在Droplets中选择需要的服务类型</p><p><img src="http://oei91bbtj.bkt.clouddn.com/10droplets.png" alt=""></p><p>3.在Droplets管理中查看各种服务器类型和参数</p><p><img src="http://oei91bbtj.bkt.clouddn.com/9digitalOcean-ok.png" alt=""></p><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote><p>文中图片由@Frank Liu提供，感谢！由于之前没有截图备份提供，所以在@Frank Liu注册时候特意嘱咐留存截图。</p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> Tips </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tips </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Digital Ocean上科学上网</title>
       <link href="/2018/06/04/Digital-Ocean%E4%B8%8A%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
       <url>/2018/06/04/Digital-Ocean%E4%B8%8A%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
